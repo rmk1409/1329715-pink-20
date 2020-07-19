@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Pink - Главная</title>
+</head>
+<body>
+<header class="main-header">
+  <a class="main-header__logo logo">
+    <img src="https://via.placeholder.com/74x23" alt="logo" width="74" height="23">
+  </a>
+  <button class="main-header__button-toggle" type="button" title="Открыть / закрыть меню">
+    Кнопка открытия / закрытия меню
+  </button>
+  <nav>
+    <ul class="main-header__nav-menu nav-menu">
+      <li>
+        <a class="nav-menu__link">Главная</a>
+      </li>
+      <li>
+        <a class="nav-menu__link" href="photo.html">Фотографии</a>
+      </li>
+      <li>
+        <a class="nav-menu__link" href="form.html">Конкурс</a>
+      </li>
+      <li>
+        <a class="nav-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="intro">
+    <h2 class="intro__header">Взгляните на жизнь иначе!</h2>
+    <img src="https://via.placeholder.com/320x286" alt="пример работы нашего приложения Pink" width="320" height="286">
+  </section>
+  <section class="download-section">
+    <a class="download-section__button-download" href="https://www.apple.com/retail/">Скачать приложение</a>
+    <ul class="download-section__store-list store-list">
+      <li>
+        <a href="https://www.apple.com/retail/">
+          <img src="https://via.placeholder.com/47x56" alt="тип платформы - айфон" width="47" height="56">
+        </a>
+      </li>
+      <li>
+        <a href="https://play.google.com/store?hl=en">
+          <img src="https://via.placeholder.com/43x47" alt="тип платформы - андроид" width="43" height="47">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.microsoft.com/en-us/store/apps/windows">
+          <img src="https://via.placeholder.com/44x41" alt="тип платформы - виндоус" width="44" height="41">
+        </a>
+      </li>
+    </ul>
+    <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+  </section>
+  <section class="question-solution-section">
+    <h2 class="visually-hidden">Question-solution section</h2>
+    <p class="question-solution-section__paragraph">Устали от серости мегаполиса?</p>
+    <p class="question-solution-section__paragraph">Нам есть, что вам предложить!</p>
+    <ul class="question-solution-section__advantages-list advantages-list">
+      <li>
+        <h3 class="advantages-list__header">Поднимает настроение</h3>
+        <p class="advantages-list__paragraph">
+          Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов
+        </p>
+      </li>
+      <li>
+        <h3 class="advantages-list__header">Меняет мир вокруг</h3>
+        <p class="advantages-list__paragraph">
+          Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+        </p>
+      </li>
+      <li>
+        <h3 class="advantages-list__header">Заводит новых друзей</h3>
+        <p class="advantages-list__paragraph">
+          Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+        </p>
+      </li>
+    </ul>
+    <img class="question-solution-section__img-application" src="https://via.placeholder.com/157x320"
+         alt="картинка использования приложения" width="157" height="320">
+  </section>
+</main>
+<footer>
+  <a class="main-footer__logo logo">
+    <img src="https://via.placeholder.com/74x23" alt="logo" width="74" height="23">
+  </a>
+  <ul class="main-footer__socials social-list">
+    <li>
+      <a href="#">
+        <img src="https://via.placeholder.com/18x14" alt="соц. сеть твиттер" width="18" height="14">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="https://via.placeholder.com/9x18" alt="соц. сеть фейсбук" width="9" height="18">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="https://via.placeholder.com/15x13" alt="соц. сеть ютуб" width="15" height="13">
+      </a>
+    </li>
+  </ul>
+  <section class="main-footer__copyright">
+    <p>Разработано</p>
+    <a href="https://htmlacademy.ru/intensive/adaptive">
+      <img src="https://via.placeholder.com/15x13" alt="курс академии">
+    </a>
+  </section>
+</footer>
+</body>
 </html>
