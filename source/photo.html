@@ -6,13 +6,13 @@
 </head>
 <body>
 <header class="main-header">
-  <a class="main-header__logo logo" href="index.html">
-    <img src="https://via.placeholder.com/74x23" alt="logo" width="74" height="23">
-  </a>
-  <button class="main-header__button-toggle" type="button" title="Открыть / закрыть меню">
-    Кнопка открытия / закрытия меню
-  </button>
   <nav>
+    <a class="main-header__logo" href="index.html">
+      <img src="https://via.placeholder.com/74x23" alt="logo" width="74" height="23">
+    </a>
+    <button class="main-header__button-toggle" type="button" title="Открыть / закрыть меню">
+      Кнопка открытия / закрытия меню
+    </button>
     <ul class="main-header__nav-menu nav-menu">
       <li>
         <a class="nav-menu__link" href="index.html">Главная</a>
@@ -34,120 +34,130 @@
     <h2 class="intro__header">Фотографии пользователей</h2>
   </section>
   <section class="photos">
-    <h3 class="photos__header"></h3>
-    <ul class="photos__review-list">
+    <h3 class="photos__header">
+      Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+    </h3>
+    <ul class="photos__review-list review-list">
       <li>
         <a href="#">
           <img src="https://via.placeholder.com/320x137" alt="панорама дня" width="320" height="137">
         </a>
-        <blockquote>
-          <cite>Анна</cite><span>(5 минут назад)</span>
-          <p>
+        <blockquote class="review-list__block">
+          <cite class="review-list__author">Анна</cite>
+          <span class="review-list__time">(5 минут назад)</span>
+          <p class="review-list__comment">
             Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
             вопросы!
           </p>
-          <p>нравится: 215</p>
+          <p class="review-list__like">нравится: 215</p>
         </blockquote>
       </li>
       <li>
         <a href="#">
           <img src="https://via.placeholder.com/280x180" alt="фотка" width="280" height="180">
         </a>
-        <blockquote>
-          <cite>Левон</cite><span>(5 часов назад)</span>
-          <p>
+        <blockquote class="review-list__block">
+          <cite class="review-list__author">Левон</cite>
+          <span class="review-list__time">(5 часов назад)</span>
+          <p class="review-list__comment">
             Вчера он на луну летал, сегодня в руки к нам попал.
           </p>
-          <p>нравится: 356</p>
+          <p class="review-list__like">нравится: 356</p>
         </blockquote>
       </li>
       <li>
         <a href="#">
           <img src="https://via.placeholder.com/280x180" alt="фотка" width="280" height="180">
         </a>
-        <blockquote>
-          <cite>Антон</cite><span>(12 часов назад)</span>
-          <p>
+        <blockquote class="review-list__block">
+          <cite class="review-list__author">Антон</cite>
+          <span class="review-list__time">(12 часов назад)</span>
+          <p class="review-list__comment">
             Соседи будут рады!
           </p>
-          <p>нравится: 666</p>
+          <p class="review-list__like">нравится: 666</p>
         </blockquote>
       </li>
       <li>
         <a href="#">
           <img src="https://via.placeholder.com/280x180" alt="фотка" width="280" height="180">
         </a>
-        <blockquote>
-          <cite>Борис</cite><span>(20 часов назад)</span>
-          <p>
+        <blockquote class="review-list__block review-list-block">
+          <cite class="review-list-block__author">Борис</cite>
+          <span class="review-list-block__time">(20 часов назад)</span>
+          <p class="review-list-block__comment">
             Здесь могла быть ваша цитата о высоком и вечном.
           </p>
-          <p>нравится: 215</p>
+          <p class="review-list-block__like">нравится: 215</p>
         </blockquote>
       </li>
       <li>
         <a href="#">
           <img src="https://via.placeholder.com/280x180" alt="фотка" width="280" height="180">
         </a>
-        <blockquote>
-          <cite>Сергей</cite><span>(25 часов назад)</span>
-          <p>
+        <blockquote class="review-list__block">
+          <cite class="review-list-block__author">Сергей</cite>
+          <span class="review-list-block__time">(25 часов назад)</span>
+          <p class="review-list-block__comment">
             Самая кубанская в мире!
           </p>
-          <p>нравится: 4</p>
+          <p class="review-list-block__like">нравится: 4</p>
         </blockquote>
       </li>
       <li>
         <a href="#">
           <img src="https://via.placeholder.com/280x180" alt="фотка" width="280" height="180">
         </a>
-        <blockquote>
-          <cite>Максим</cite><span>(40 часов назад)</span>
-          <p>
+        <blockquote class="review-list__block">
+          <cite class="review-list-block__author">Максим</cite>
+          <span class="review-list-block__time">(40 часов назад)</span>
+          <p class="review-list-block__comment">
             Где снег-то?
           </p>
-          <p>нравится: 150</p>
+          <p class="review-list-block__like">нравится: 150</p>
         </blockquote>
       </li>
       <li>
         <a href="#">
           <img src="https://via.placeholder.com/280x180" alt="фотка" width="280" height="180">
         </a>
-        <blockquote>
-          <cite>Надежда</cite><span>(45 часов назад)</span>
-          <p>
+        <blockquote class="review-list__block">
+          <cite class="review-list-block__author">Надежда</cite>
+          <span class="review-list-block__time">(45 часов назад)</span>
+          <p class="review-list-block__comment">
             Всем GM и взаимные лайки!
           </p>
-          <p>нравится: 2560</p>
+          <p class="review-list-block__like">нравится: 2560</p>
         </blockquote>
       </li>
     </ul>
   </section>
 </main>
-<footer>
-  <a class="main-footer__logo logo" href="index.html">
-    <img src="https://via.placeholder.com/74x23" alt="logo" width="74" height="23">
+<footer class="main-footer">
+  <a class="main-footer__logo logo">
+    <img src="https://via.placeholder.com/59x40" alt="лого картинка" width="59" height="40">
+    <img src="https://via.placeholder.com/74x23" alt="лого текст" width="74" height="23">
   </a>
   <ul class="main-footer__socials social-list">
     <li>
-      <a href="#">
+      <a href="#" class="social-list__link">
         <img src="https://via.placeholder.com/18x14" alt="соц. сеть твиттер" width="18" height="14">
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="#" class="social-list__link">
         <img src="https://via.placeholder.com/9x18" alt="соц. сеть фейсбук" width="9" height="18">
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="#" class="social-list__link">
         <img src="https://via.placeholder.com/15x13" alt="соц. сеть ютуб" width="15" height="13">
       </a>
     </li>
   </ul>
-  <section class="main-footer__copyright">
-    <p>Разработано</p>
-    <a href="https://htmlacademy.ru/intensive/adaptive">
+  <section class="main-footer__copyright copyright">
+    <p class="copyright__text">Разработано</p>
+    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
       <img src="https://via.placeholder.com/15x13" alt="курс академии">
     </a>
   </section>
