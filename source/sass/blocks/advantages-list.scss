@@ -1,0 +1,20 @@
+.advantages-list {
+  @include reset-list;
+  padding: 10px 20px 325px;
+  background-color: $grey;
+  color: $dark-blue;
+}
+
+.advantages-list__header {
+  margin-top: 43px;
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+}
+
+.advantages-list__paragraph {
+  font-size: 14px;
+  line-height: 24px;
+}

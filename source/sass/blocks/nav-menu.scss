@@ -1,0 +1,12 @@
+.nav-menu {
+  @include reset-list;
+}
+
+.nav-menu__link {
+  display: flex;
+  padding: 25px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: $white;
+}

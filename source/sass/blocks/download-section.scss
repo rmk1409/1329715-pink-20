@@ -1,0 +1,27 @@
+.download-section {
+  padding: 28px 20px 38px;
+  color: $white;
+  background-color: $almost-black;
+}
+
+.download-section__download-button {
+  @include button;
+  width: 280px;
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: inherit;
+  border: 3px solid $white;
+  border-radius: 29px;
+}
+
+.download-section__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.download-section__store-list {
+  margin-bottom: 28px;
+}
