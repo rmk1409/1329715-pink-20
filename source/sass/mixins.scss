@@ -1,0 +1,14 @@
+@mixin button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 21px 38px;
+  text-decoration: none;
+  border: none;
+}
+
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
