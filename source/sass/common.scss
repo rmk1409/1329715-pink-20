@@ -1,11 +1,12 @@
 body {
-  background: $white;
+  background-color: $grey-input;
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .mobile-container {
   width: 320px;
   margin: 0 auto;
+  background-color: $white;
 }
 
 .visually-hidden {

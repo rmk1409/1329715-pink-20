@@ -1,0 +1,35 @@
+.option__name-and-price {
+  padding: 20px 0 35px;
+  background-color: $dark-blue;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.option__name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.option__price {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.option__advantages {
+  @include reset-list;
+  background-color: $white;
+  color: $dark-blue;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.option__advantages li {
+  padding: 24px 50px 25px 20px;
+}
+
+.options__controls {
+  @include reset-list;
+  margin-top: 45px;
+}

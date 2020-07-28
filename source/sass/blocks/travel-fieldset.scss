@@ -1,0 +1,27 @@
+.travel-fieldset {
+  @include reset-fieldset;
+  padding: 42px 20px 44px;
+  background-color: $grey;
+}
+
+.travel-fieldset__header {
+  margin: 0;
+  margin-bottom: 44px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $light-red;
+}
+
+.travel-fieldset__label {
+  display: block;
+  margin-bottom: 47px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark-blue;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

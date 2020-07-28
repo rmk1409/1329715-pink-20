@@ -6,11 +6,7 @@
 
 .download-section__download-button {
   @include button;
-  width: 280px;
   margin-bottom: 32px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
   color: inherit;
   border: 3px solid $white;
   border-radius: 29px;

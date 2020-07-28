@@ -42,30 +42,26 @@
       </ul>
     </nav>
   </header>
-  <main class="main">
-    <section class="main__intro">
-      <h2 class="main__header">Конкурс на самое безбашенное путешествие с Пинк</h2>
+  <main>
+    <section class="intro intro--contest-page">
+      <h2 class="intro__header">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </section>
-    <h3 class="main__pre-form-header">
+    <h3 class="intro__pre-form-header">
       Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
     </h3>
-    <form method="post" action="#" class="main__main-form main-form">
+    <form method="post" action="#" class="intro__main-form main-form">
       <fieldset class="main-form__name-fieldset name-fieldset">
-        <label class="name-fieldset__label">
-          Фамилия:
-          <input class="name-fieldset__input" type="text" placeholder="Укажите фамилию *" name="name">
-        </label>
-        <label class="name-fieldset__label">
-          Имя:
-          <input class="name-fieldset__input" type="text" placeholder="Введите ваше имя *" name="family-name">
-        </label>
-        <label class="name-fieldset__label">
-          Отчество:
-          <input class="name-fieldset__input" type="text" placeholder="Ну и отчество тоже" name="father-name">
-        </label>
+        <label class="name-fieldset__label" for="family-name-input">Фамилия:</label>
+        <input class="name-fieldset__input" id="family-name-input" type="text" placeholder="Укажите фамилию *"
+          name="family-name">
+        <label class="name-fieldset__label" for="name-input">Имя:</label>
+        <input class="name-fieldset__input" id="name-input" type="text" placeholder="Введите ваше имя *" name="name">
+        <label class="name-fieldset__label" for="father-name-input">Отчество:</label>
+        <input class="name-fieldset__input" id="father-name-input" type="text" placeholder="Ну и отчество тоже"
+          name="father-name">
       </fieldset>
       <fieldset class="main-form__travel-fieldset travel-fieldset">
-        <legend class="travel-fieldset__legend">Ваши безбашенные достижения в путешествии</legend>
+        <h3 class="travel-fieldset__header">Ваши безбашенные достижения в путешествии</h3>
         <label class="travel-fieldset__label">
           <input type="checkbox" name="shark" checked>
           Сделал селфи с акулой
@@ -92,17 +88,15 @@
         </label>
       </fieldset>
       <fieldset class="main-form__contacts-fieldset contacts-fieldset">
-        <label class="contacts-fieldset__label">
-          Номер телефона
-          <input class="contacts-fieldset__input" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
-        </label>
-        <label class="contacts-fieldset__label">
-          Адрес почты
-          <input class="contacts-fieldset__input" type="email" name="email" placeholder="Введите почту *">
-        </label>
+        <label class="contacts-fieldset__label" for="phone-number-input">Номер телефона</label>
+        <input class="contacts-fieldset__input" id="phone-number-input" type="tel" name="phone-number"
+          placeholder="Номер, пожалуйста">
+        <label class="contacts-fieldset__label" for="address-input">Адрес почты</label>
+        <input class="contacts-fieldset__input" id="address-input" type="email" name="email"
+          placeholder="Введите почту *">
       </fieldset>
       <fieldset class="main-form__platform-type-fieldset platform-type-fieldset">
-        <legend class="platform-type-fieldset__legend">С какими приложением путешествовали?</legend>
+        <h3 class="platform-type-fieldset__header">С какими приложением путешествовали?</h3>
         <label class="platform-type-fieldset__label">
           <input type="radio" name="platform" value="ios" checked>
           Pink для iOS
@@ -116,13 +110,11 @@
           Windows Phone
         </label>
       </fieldset>
-      <label class="main-form__emotion-label">
-        Опишите свои эмоции
-        <textarea class="main-form__emotion-message" name="message"
-                  placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      </label>
+      <label class="main-form__emotion-label" for="message-textarea">Опишите свои эмоции</label>
+      <textarea class="main-form__emotion-message" id="message-textarea" name="message"
+        placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       <button class="main-form__submit-button" type="submit">Отправить форму</button>
-      <p class="main-form__hint">- Обязательные поля</p>
+      <p class="main-form__hint"><span>*</span> - Обязательные поля</p>
     </form>
   </main>
   <footer class="main-footer">

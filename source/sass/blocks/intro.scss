@@ -10,6 +10,10 @@
   padding-bottom: 84px;
 }
 
+.intro--contest-page {
+  padding-bottom: 51px;
+}
+
 .intro__header {
   margin: 0;
   margin-bottom: 34px;
@@ -17,6 +21,14 @@
   font-size: 24px;
   line-height: 120%;
   text-align: center;
+}
+
+.intro__pre-form-header {
+  margin: 54px 20px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blue;
 }
 
 .intro__image {
