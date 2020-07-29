@@ -1,36 +1,35 @@
-.review-list {
-  @include reset-list;
+.photos-review-list {
   color: $dark-blue;
 }
 
-.review-list__block {
+.photos-review-list__block {
   margin: 0 20px 20px;
   padding: 26px 10px 26px 17px;
   background-color: $grey;
 }
 
-.review-list__author {
+.photos-review-list__author {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
 }
 
-.review-list__time {
+.photos-review-list__time {
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
 }
 
-.review-list__comment {
+.photos-review-list__comment {
   margin-top: 14px;
   margin-bottom: 25px;
   font-size: 14px;
   line-height: 24px;
 }
 
-.review-list__like {
+.photos-review-list__like {
   margin: 0;
   font-size: 12px;
   line-height: 24px;
@@ -38,7 +37,7 @@
   color: $light-red;
 }
 
-.review-list__link {
+.photos-review-list__link {
   display: block;
   text-align: center;
   line-height: 0;

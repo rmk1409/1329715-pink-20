@@ -1,0 +1,63 @@
+.handle-form {
+  padding-top: 50px;
+}
+
+.handle-form__header {
+  margin: 0;
+  margin-bottom: 52px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blue;
+}
+
+.handle-form__form {
+  padding: 20px;
+  padding-bottom: 0;
+  background-color: $grey;
+}
+
+.handle-form__img {
+  margin-bottom: 42px;
+}
+
+.handler-crop,
+.handler-fill,
+.handler-contrast {
+  border: none;
+}
+
+.switcher {
+  border: none;
+  background-color: transparent;
+}
+
+.handle-form__buttons-div {
+  padding: 38px 0 41px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    content: "";
+    height: 1px;
+    width: 320px;
+    background-color: rgba($dark-blue, 0.1);
+  }
+}
+
+.handle-form__submit-button,
+.handle-form__cancel-button {
+  background-color: inherit;
+  border: 3px solid $light-red;
+  color: $light-red;
+  border-radius: 30px;
+}
+
+.handle-form__cancel-button {
+  margin-top: 12px;
+  border-color: $dark-blue;
+  color: $dark-blue;
+  opacity: 0.1;
+}

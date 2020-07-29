@@ -1,0 +1,30 @@
+.contact-section {
+  padding-top: 50px;
+}
+
+.contact-section__header {
+  margin: 0;
+  margin-bottom: 45px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.contact-section__type {
+  margin: 0;
+  margin-bottom: 13px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.contact-section__value {
+  display: block;
+  margin-bottom: 31px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $light-red;
+}
