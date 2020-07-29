@@ -5,7 +5,6 @@
 }
 
 .download-section__download-button {
-  @include button;
   margin-bottom: 32px;
   color: inherit;
   border: 3px solid $white;

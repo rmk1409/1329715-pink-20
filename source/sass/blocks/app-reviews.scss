@@ -6,11 +6,6 @@
   margin: 0;
 }
 
-.app-reviews__controls,
-.app-reviews__review-list {
-  @include reset-list;
-}
-
 .app-reviews__author {
   font-style: normal;
   font-weight: bold;

@@ -49,7 +49,6 @@
 
 .handle-form__submit-button,
 .handle-form__cancel-button {
-  @include button;
   background-color: inherit;
   border: 3px solid $light-red;
   color: $light-red;
