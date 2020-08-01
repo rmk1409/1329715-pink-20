@@ -28,10 +28,14 @@ body {
   border: none;
 }
 
-.mobile-container {
+.outer-container {
   width: 320px;
   margin: 0 auto;
   background-color: $white;
+}
+
+.inner-container {
+  padding: 0 20px;
 }
 
 .visually-hidden {
