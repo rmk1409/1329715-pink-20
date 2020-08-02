@@ -1,5 +1,5 @@
 .download-section {
-  padding: 28px 0 38px;
+  padding: 28px 0 32px;
   color: $white;
   background-color: $almost-black;
 }
@@ -12,7 +12,8 @@
 }
 
 .download-section__description {
-  width: 300px;
+  width: 280px;
+  margin-bottom: 0;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -20,7 +21,7 @@
 }
 
 .download-section__store-list {
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
 
 @media (min-width: $tablet-min-width) {

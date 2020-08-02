@@ -1,15 +1,19 @@
 .advantages-section {
   background-color: $grey;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  padding-top: 84px;
+  background-position-x: 50%;
 }
 
 .advantages-section .container {
-  padding-bottom: 325px;
+  padding-bottom: 302px;
   position: relative;
   overflow: hidden;
 
   &::after {
     position: absolute;
-    bottom: -37px;
+    bottom: -45px;
     left: 50%;
     content: "";
     width: 157px;
