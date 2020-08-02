@@ -1,0 +1,21 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  align-items: center;
+}
+
+.copyright__text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (min-width: $desktop-min-width) {
+  .copyright {
+    width: 153px;
+  }
+
+  .copyright__text {
+    font-size: 18px;
+  }
+}

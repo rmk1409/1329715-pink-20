@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pink - Форма</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="mobile-container">
-  <header class="main-header">
-    <nav>
+<header class="main-header">
+  <nav class="main-header__nav">
+    <div class="container">
       <a class="main-header__logo" href="index.html">
         <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg"
           x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859"
@@ -34,18 +35,22 @@
           <a class="nav-menu__link" href="photo.html">Фотографии</a>
         </li>
         <li>
-          <a class="nav-menu__link">Конкурс</a>
+          <a class="nav-menu__link nav-menu__link--active">Конкурс</a>
         </li>
         <li>
           <a class="nav-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="intro intro--contest-page">
+    </div>
+  </nav>
+  <section class="intro intro--contest-page">
+    <div class="container">
       <h2 class="intro__header">Конкурс на самое безбашенное путешествие с Пинк</h2>
-    </section>
+    </div>
+  </section>
+</header>
+<main>
+  <div class="container">
     <h3 class="intro__pre-form-header">
       Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
     </h3>
@@ -110,14 +115,17 @@
           Windows Phone
         </label>
       </fieldset>
-      <label class="main-form__label-for-input-text main-form__emotion-label" for="message-textarea">Опишите свои эмоции</label>
+      <label class="main-form__label-for-input-text main-form__emotion-label" for="message-textarea">Опишите свои
+        эмоции</label>
       <textarea class="main-form__input-text" id="message-textarea" name="message"
-        placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       <button class="main-form__submit-button button" type="submit">Отправить форму</button>
       <p class="main-form__hint"><span>*</span> - Обязательные поля</p>
     </form>
-  </main>
-  <footer class="main-footer">
+  </div>
+</main>
+<footer class="main-footer">
+  <div class="container">
     <a class="main-footer__logo logo" href="index.html">
       <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg"
         x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375"
@@ -153,9 +161,8 @@
       </li>
       <li>
         <a href="#" class="social-list__link">
-          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-            x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944"
-            enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="8.673px" height="18.944px"
+            viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
             <path
               d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
           </svg>
@@ -181,7 +188,7 @@
         </svg>
       </a>
     </section>
-  </footer>
-</div>
+  </div>
+</footer>
 </body>
 </html>

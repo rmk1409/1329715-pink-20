@@ -1,5 +1,5 @@
 .download-section {
-  padding: 28px 20px 38px;
+  padding: 28px 0 32px;
   color: $white;
   background-color: $almost-black;
 }
@@ -12,11 +12,42 @@
 }
 
 .download-section__description {
+  width: 280px;
+  margin-bottom: 0;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
 }
 
 .download-section__store-list {
-  margin-bottom: 28px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .download-section {
+    background-color: transparent;
+    padding-bottom: 113px;
+  }
+
+  .download-section__description {
+    width: 308px;
+    font-size: 18px;
+  }
+
+  .download-section__download-button {
+    width: 300px;
+    margin-bottom: 44px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .download-section {
+    background-color: transparent;
+    padding-bottom: 125px;
+  }
+
+  .download-section__download-button {
+    margin-bottom: 67px;
+  }
 }

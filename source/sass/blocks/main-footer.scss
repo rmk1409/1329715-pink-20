@@ -1,3 +1,27 @@
-.main-footer {
-  padding: 40px 20px;
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 284px;
+  padding-top: 35px;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+@media (min-width: $tablet-min-width) {
+  .main-footer .container {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 29px;
+    padding-bottom: 51px;
+    min-height: 127px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .main-footer .container {
+    min-height: 197px;
+    padding-top: 63px;
+    padding-bottom: 87px;
+  }
 }

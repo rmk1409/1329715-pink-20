@@ -1,6 +1,12 @@
 body {
-  background-color: $grey-input;
+  margin: 0;
+  min-width: $mobile-width;
   font-family: "Open Sans", "Arial", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .button {
@@ -8,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 280px;
-  padding: 21px 38px;
+  padding: 16px 38px;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
@@ -28,10 +34,10 @@ body {
   border: none;
 }
 
-.mobile-container {
-  width: 320px;
+.container {
   margin: 0 auto;
-  background-color: $white;
+  padding: 0 20px;
+  width: $mobile-width;
 }
 
 .visually-hidden {
@@ -48,4 +54,17 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+@media (min-width: $tablet-min-width) {
+  .container {
+    width: $tablet-min-width;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .container {
+    padding: 0 10px;
+    width: $desktop-min-width;
+  }
 }

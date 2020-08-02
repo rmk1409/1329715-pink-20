@@ -1,0 +1,68 @@
+.advantages-section {
+  background-color: $grey;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+
+.advantages-section .container {
+  padding-bottom: 302px;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    content: "";
+    width: 157px;
+    height: 320px;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $tablet-min-width) {
+  .advantages-section {
+    position: relative;
+    margin-top: 8px;
+  }
+
+  .advantages-section .container {
+    padding-top: 68px;
+    padding-bottom: 10px;
+    padding-left: 330px;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      position: absolute;
+      bottom: -65px;
+      left: 20px;
+      content: "";
+      width: 268px;
+      height: 547px;
+      background-image: url("../img/iphone-screen-3-tablet@1x.png");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .advantages-section {
+    margin-top: 28px;
+    background-position: 50% 26px, 0 0;
+    background-image: url("../img/bg-triangle-white.svg"), linear-gradient($white 26px, $grey 26px);
+  }
+
+  .advantages-section .container {
+    padding-top: 0;
+    padding-left: 10px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
