@@ -4,6 +4,11 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .button {
   display: flex;
   justify-content: center;
