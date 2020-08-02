@@ -4,7 +4,8 @@
 }
 
 .intro--photo-page {
-  padding-bottom: 84px;
+  padding-top: 28px;
+  padding-bottom: 78px;
 }
 
 .intro--contest-page {
@@ -22,12 +23,9 @@
   text-align: center;
 }
 
-.intro--contest-page .intro__header {
-  line-height: 33px;
-}
-
 .intro--contest-page .intro__header,
 .intro--photo-page .intro__header {
+  line-height: 33px;
   margin-bottom: 0;
 }
 
@@ -61,13 +59,14 @@
     padding-bottom: 60px;
   }
 
+  .intro--photo-page {
+    padding-bottom: 127px;
+  }
+
+  .intro--photo-page .intro__header,
   .intro--contest-page .intro__header {
     margin-top: 40px;
     margin-left: 10px;
-  }
-
-  .intro--contest-page .intro__header,
-  .intro--photo-page .intro__header {
     width: auto;
     font-size: 50px;
     line-height: 68px;
@@ -92,5 +91,10 @@
   .intro--contest-page {
     padding-top: 18px;
     padding-bottom: 88px;
+  }
+
+  .intro--photo-page {
+    padding-top: 18px;
+    padding-bottom: 90px;
   }
 }

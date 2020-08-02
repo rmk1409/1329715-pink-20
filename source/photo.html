@@ -32,7 +32,7 @@
           <a class="nav-menu__link" href="index.html">Главная</a>
         </li>
         <li>
-          <a class="nav-menu__link">Фотографии</a>
+          <a class="nav-menu__link nav-menu__link--active">Фотографии</a>
         </li>
         <li>
           <a class="nav-menu__link" href="form.html">Конкурс</a>
@@ -53,15 +53,18 @@
   </section>
 </header>
 <main>
-  <div class="container">
-    <section class="photos">
+  <section class="photos">
+    <div class="container">
       <h3 class="photos__header">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        Взгляните на фотографии, которые выкладывают пользователи!<br>
+        Видите, как не хватает ваших?
       </h3>
-      <section class="first-photo-and-comment-section">
-        <a class="photos__link" href="#">
-          <img src="img/panorama-mobile@1x.jpg" alt="панорама дня" width="320" height="137">
-        </a>
+    </div>
+    <section class="photos__first-photo-and-comment-section">
+      <a class="photos__link" href="#">
+        <img src="img/panorama-mobile@1x.jpg" alt="панорама дня" width="320" height="137">
+      </a>
+      <div class="container">
         <blockquote class="photos__block">
           <div class="photos__author-and-upper-like">
             <cite class="photos__author">
@@ -71,12 +74,14 @@
             <p class="photos__like photos__like--top">нравится: 215</p>
           </div>
           <p class="photos__comment photos__comment-first-comment">
-            Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте
-            свои вопросы!
+            Прыгать или нет? Напишите в комментарии свой совет и<br>
+            смотрите прямую трансляцию в перископе, задавайте свои вопросы!
           </p>
           <p class="photos__like photos__like--bottom">нравится: 215</p>
         </blockquote>
-      </section>
+      </div>
+    </section>
+    <div class="container">
       <ul class="photos__review-list reset-list">
         <li>
           <a class="photos__link" href="#">
@@ -109,25 +114,25 @@
             <img src="img/photo-window-mobile@1x.jpg" alt="фотка" width="280" height="180">
           </a>
           <blockquote class="photos__block photos-block">
-            <cite class="photos-block__author">Борис</cite>
-            <span class="photos-block__time">(20 часов назад)</span>
-            <p class="photos-block__comment">
+            <cite class="photos__author">Борис</cite>
+            <span class="photos__time">(20 часов назад)</span>
+            <p class="photos__comment">
               Здесь могла быть ваша цитата о высоком и вечном.
             </p>
-            <p class="photos-block__like">нравится: 215</p>
+            <p class="photos__like">нравится: 215</p>
           </blockquote>
         </li>
         <li>
           <a class="photos__link" href="#">
-            <img src="img/photo-fair-mobile@1x.jpg" alt="фотка" width="280" height="180">
+            <img class="photos__photo-fair" src="img/photo-fair-tablet@1x.jpg" alt="фотка" width="280" height="180">
           </a>
           <blockquote class="photos__block">
-            <cite class="photos-block__author">Сергей</cite>
-            <span class="photos-block__time">(25 часов назад)</span>
-            <p class="photos-block__comment">
+            <cite class="photos__author">Сергей</cite>
+            <span class="photos__time">(25 часов назад)</span>
+            <p class="photos__comment">
               Самая кубанская в мире!
             </p>
-            <p class="photos-block__like">нравится: 4</p>
+            <p class="photos__like">нравится: 4</p>
           </blockquote>
         </li>
         <li>
@@ -135,12 +140,12 @@
             <img src="img/photo-pov-mobile@1x.jpg" alt="фотка" width="280" height="180">
           </a>
           <blockquote class="photos__block">
-            <cite class="photos-block__author">Максим</cite>
-            <span class="photos-block__time">(40 часов назад)</span>
-            <p class="photos-block__comment">
+            <cite class="photos__author">Максим</cite>
+            <span class="photos__time">(40 часов назад)</span>
+            <p class="photos__comment">
               Где снег-то?
             </p>
-            <p class="photos-block__like">нравится: 150</p>
+            <p class="photos__like">нравится: 150</p>
           </blockquote>
         </li>
         <li>
@@ -148,22 +153,26 @@
             <img src="img/photo-wing-mobile@1x.jpg" alt="фотка" width="280" height="180">
           </a>
           <blockquote class="photos__block">
-            <cite class="photos-block__author">Надежда</cite>
-            <span class="photos-block__time">(45 часов назад)</span>
-            <p class="photos-block__comment">
+            <cite class="photos__author">Надежда</cite>
+            <span class="photos__time">(45 часов назад)</span>
+            <p class="photos__comment">
               Всем GM и взаимные лайки!
             </p>
-            <p class="photos-block__like">нравится: 2560</p>
+            <p class="photos__like">нравится: 2560</p>
           </blockquote>
         </li>
       </ul>
-    </section>
-    <section class="handle-form">
+    </div>
+  </section>
+  <section class="handle-form">
+    <div class="container">
       <h3 class="handle-form__header">
         Затмите их всех!<br>
         Выкладывайте все, что накопилось в телефоне!
       </h3>
-      <form class="handle-form__form" method="get" action="#">
+    </div>
+    <form class="handle-form__form" method="get" action="#">
+      <div class="container">
         <img class="handle-form__img" src="img/photo-road-mobile@1x.jpg" alt="фотка" width="280" height="374">
         <fieldset class="handle-form__handler-crop handler-crop">
           <button class="handler-crop__switcher switcher" type="button">
@@ -213,8 +222,9 @@
           <button class="handle-form__submit-button button" type="submit">Запостить</button>
           <button class="handle-form__cancel-button button" type="reset">Отменить</button>
         </div>
-      </form>
-    </section>
+      </div>
+    </form>
+  </section>
   </div>
 </main>
 <footer class="main-footer">
