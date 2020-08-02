@@ -58,11 +58,15 @@
     display: none;
   }
 
+  .main-header__nav {
+    padding-top: 46px;
+  }
+
   .main-header__nav-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 630px;
+    max-width: 620px;
     font-weight: normal;
     font-size: 18px;
     line-height: 18px;

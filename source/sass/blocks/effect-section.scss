@@ -33,21 +33,37 @@
 
 @media (min-width: $desktop-min-width) {
   .effect-section {
+    padding-top: 89px;
     background-color: $grey;
   }
 
   .effect-section .container {
-    padding-left: 369px;
+    padding-left: 381px;
   }
 
   .effect-section__header {
     font-size: 30px;
     line-height: 30px;
+    margin-bottom: 0;
+  }
+
+  .effect-section__header br {
+    display: none;
   }
 
   .effect-section__paragraph,
   .effect-section__link {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .effect-section__paragraph {
+    margin-top: 25px;
+    margin-bottom: 31px;
+    width: 554px;
+  }
+
+  .effect-section__paragraph br {
+    display: none;
   }
 }

@@ -18,7 +18,8 @@
   line-height: 24px;
 }
 
-.advantages-list__paragraph br {
+.advantages-list__paragraph br,
+.advantages-list__header br {
   display: none;
 }
 
@@ -49,7 +50,11 @@
 @media (min-width: $desktop-min-width) {
   .advantages-list__li {
     position: relative;
-    padding-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 356px;
+    text-align: center;
 
     &::before {
       position: absolute;
@@ -72,12 +77,23 @@
   }
 
   .advantages-list__header {
+    width: 240px;
+    margin-bottom: 23px;
     font-size: 30px;
     line-height: 30px;
   }
 
+  .advantages-list__header br {
+    display: inline;
+  }
+
   .advantages-list__paragraph {
+    width: 248px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .advantages-list__paragraph br {
+    display: none;
   }
 }

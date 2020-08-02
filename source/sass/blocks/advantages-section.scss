@@ -51,7 +51,14 @@
 }
 
 @media (min-width: $desktop-min-width) {
+  .advantages-section {
+    margin-top: 28px;
+    background-position: 50% 26px, 0 0;
+    background-image: url("../img/bg-triangle-white.svg"), linear-gradient($white 26px, $grey 26px);
+  }
+
   .advantages-section .container {
+    padding-top: 0;
     padding-left: 10px;
 
     &::before {

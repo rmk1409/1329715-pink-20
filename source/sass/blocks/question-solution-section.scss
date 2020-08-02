@@ -31,6 +31,10 @@
 }
 
 @media (min-width: $desktop-min-width) {
+  .question-solution-section {
+    padding-top: 62px;
+  }
+
   .question-solution-section__paragraph {
     font-size: 50px;
     line-height: 68px;

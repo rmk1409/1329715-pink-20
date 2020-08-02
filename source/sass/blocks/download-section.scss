@@ -40,3 +40,14 @@
     margin-bottom: 44px;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .download-section {
+    background-color: transparent;
+    padding-bottom: 125px;
+  }
+
+  .download-section__download-button {
+    margin-bottom: 67px;
+  }
+}
