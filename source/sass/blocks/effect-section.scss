@@ -1,18 +1,24 @@
 .effect-section {
   display: none;
-  padding-top: 102px;
+  padding-top: 65px;
   padding-bottom: 109px;
   font-size: 14px;
   line-height: 24px;
 }
 
 .effect-section .container {
-  padding-left: 310px;
+  padding-left: 330px;
 }
 
 .effect-section__header {
+  margin-bottom: 0;
   font-size: 30px;
   line-height: 36px;
+}
+
+.effect-section__paragraph {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .effect-section__link {

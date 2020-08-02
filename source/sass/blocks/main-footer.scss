@@ -11,7 +11,8 @@
 @media (min-width: $tablet-min-width) {
   .main-footer .container {
     flex-direction: row;
-    padding-top: 36px;
+    align-items: center;
+    padding-top: 29px;
     padding-bottom: 51px;
     min-height: 127px;
   }

@@ -2,7 +2,6 @@
   background-color: $grey;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  padding-top: 84px;
   background-position-x: 50%;
 }
 
@@ -24,9 +23,15 @@
 }
 
 @media (min-width: $tablet-min-width) {
+  .advantages-section {
+    position: relative;
+    margin-top: 8px;
+  }
+
   .advantages-section .container {
+    padding-top: 68px;
     padding-bottom: 10px;
-    padding-left: 302px;
+    padding-left: 330px;
 
     &::after {
       display: none;
@@ -34,7 +39,7 @@
 
     &::before {
       position: absolute;
-      bottom: -100px;
+      bottom: -65px;
       left: 20px;
       content: "";
       width: 268px;

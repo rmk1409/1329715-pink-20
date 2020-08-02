@@ -16,6 +16,10 @@
 }
 
 @media (min-width: $tablet-min-width) {
+  .question-solution-section {
+    padding: 47px 0;
+  }
+
   .question-solution-section__paragraph {
     font-size: 40px;
     line-height: 54px;

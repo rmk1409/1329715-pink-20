@@ -1,4 +1,5 @@
 .advantages-list {
+  padding-top: 84px;
   color: $dark-blue;
   text-align: center;
 }
@@ -15,6 +16,34 @@
 .advantages-list__paragraph {
   font-size: 14px;
   line-height: 24px;
+}
+
+.advantages-list__paragraph br {
+  display: none;
+}
+
+@media (min-width: $tablet-min-width) {
+  .advantages-list {
+    padding-top: 29px;
+  }
+
+  .advantages-list__paragraph br {
+    display: inline;
+  }
+
+  .advantages-list__li {
+    text-align: start;
+  }
+
+  .advantages-list__header {
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+
+  .advantages-list__paragraph {
+    margin-top: 0;
+    margin-bottom: 34px;
+  }
 }
 
 @media (min-width: $desktop-min-width) {

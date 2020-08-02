@@ -27,5 +27,16 @@
 @media (min-width: $tablet-min-width) {
   .download-section {
     background-color: transparent;
+    padding-bottom: 113px;
+  }
+
+  .download-section__description {
+    width: 308px;
+    font-size: 18px;
+  }
+
+  .download-section__download-button {
+    width: 300px;
+    margin-bottom: 44px;
   }
 }
