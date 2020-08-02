@@ -11,4 +11,9 @@
   .nav-menu__link {
     padding: 0;
   }
+
+  .nav-menu__link--active {
+    padding-bottom: 10px;
+    border-bottom: 2px solid $white;
+  }
 }

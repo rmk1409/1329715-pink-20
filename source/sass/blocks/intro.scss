@@ -8,7 +8,8 @@
 }
 
 .intro--contest-page {
-  padding-bottom: 51px;
+  padding-top: 28px;
+  padding-bottom: 44px;
 }
 
 .intro__header {
@@ -19,6 +20,10 @@
   font-size: 24px;
   line-height: 120%;
   text-align: center;
+}
+
+.intro--contest-page .intro__header {
+  line-height: 33px;
 }
 
 .intro--contest-page .intro__header,
@@ -52,6 +57,15 @@
     font-size: 40px;
   }
 
+  .intro--contest-page {
+    padding-bottom: 60px;
+  }
+
+  .intro--contest-page .intro__header {
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+
   .intro--contest-page .intro__header,
   .intro--photo-page .intro__header {
     width: auto;
@@ -73,5 +87,10 @@
     margin-bottom: 10px;
     font-size: 50px;
     line-height: 68px;
+  }
+
+  .intro--contest-page {
+    padding-top: 18px;
+    padding-bottom: 88px;
   }
 }
