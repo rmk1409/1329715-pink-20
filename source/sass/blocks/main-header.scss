@@ -1,18 +1,65 @@
 .main-header {
-  padding: 20px 21px;
+  color: $white;
+  background-image: url("../img/bg-back-tablet@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: $dark-blue;
+  background-position: 50% 0;
+}
+
+.main-header__nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba($black, 0.3);
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.main-header__button-toggle {
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+}
+
+.main-header__nav-menu {
+  flex-grow: 1;
+  display: none;
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
-  background-color: $dark-blue;
-  color: $white;
 }
 
-.main-header__button-toggle {
-  width: 23px;
-  height: 23px;
-  padding: 0;
-  background-color: transparent;
-  background-image: url("../img/icon-menu-cross.svg");
-  background-repeat: no-repeat;
+@media (min-width: $tablet-min-width) {
+  .main-header__nav {
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .main-header {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .main-header__button-toggle {
+    display: none;
+  }
+
+  .main-header__nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 630px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+  }
 }

@@ -1,0 +1,52 @@
+.advantages-section {
+  background-color: $grey;
+}
+
+.advantages-section .container {
+  padding-bottom: 325px;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    bottom: -37px;
+    left: 50%;
+    content: "";
+    width: 157px;
+    height: 320px;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $tablet-min-width) {
+  .advantages-section .container {
+    padding-bottom: 10px;
+    padding-left: 302px;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      position: absolute;
+      bottom: -100px;
+      left: 20px;
+      content: "";
+      width: 268px;
+      height: 547px;
+      background-image: url("../img/iphone-screen-3-tablet@1x.png");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .advantages-section .container {
+    padding-left: 10px;
+
+    &::before {
+      display: none;
+    }
+  }
+}

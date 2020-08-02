@@ -1,0 +1,47 @@
+.effect-section {
+  display: none;
+  padding-top: 102px;
+  padding-bottom: 109px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.effect-section .container {
+  padding-left: 310px;
+}
+
+.effect-section__header {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.effect-section__link {
+  color: $light-red;
+}
+
+@media (min-width: $tablet-min-width) {
+  .effect-section {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .effect-section {
+    background-color: $grey;
+  }
+
+  .effect-section .container {
+    padding-left: 369px;
+  }
+
+  .effect-section__header {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .effect-section__paragraph,
+  .effect-section__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

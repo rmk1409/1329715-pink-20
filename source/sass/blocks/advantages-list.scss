@@ -1,6 +1,5 @@
 .advantages-list {
-  padding: 10px 20px 325px;
-  background-color: $grey;
+  padding: 10px 0;
   color: $dark-blue;
 }
 
@@ -16,4 +15,40 @@
 .advantages-list__paragraph {
   font-size: 14px;
   line-height: 24px;
+}
+
+@media (min-width: $desktop-min-width) {
+  .advantages-list__li {
+    position: relative;
+    padding-top: 300px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 292px;
+      height: 382px;
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .advantages-list__change-the-world-li::before {
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+  }
+
+  .advantages-list__find-new-friends-li::before {
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+  }
+
+  .advantages-list__header {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .advantages-list__paragraph {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

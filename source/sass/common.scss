@@ -1,5 +1,5 @@
 body {
-  background-color: $grey-input;
+  margin: 0;
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
@@ -28,14 +28,10 @@ body {
   border: none;
 }
 
-.outer-container {
-  width: 320px;
+.container {
   margin: 0 auto;
-  background-color: $white;
-}
-
-.inner-container {
   padding: 0 20px;
+  width: $mobile-width;
 }
 
 .visually-hidden {
@@ -52,4 +48,17 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+@media (min-width: $tablet-min-width) {
+  .container {
+    width: $tablet-min-width;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .container {
+    padding: 0 10px;
+    width: $desktop-min-width;
+  }
 }

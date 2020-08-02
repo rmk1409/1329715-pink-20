@@ -6,3 +6,9 @@
   text-decoration: none;
   color: $white;
 }
+
+@media (min-width: $desktop-min-width) {
+  .nav-menu__link {
+    padding: 0;
+  }
+}

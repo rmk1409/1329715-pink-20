@@ -1,9 +1,6 @@
 .intro {
-  padding: 29px 20px 0;
+  padding: 29px 0 0;
   color: $white;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-color: $dark-blue;
 }
 
 .intro--photo-page {
@@ -15,12 +12,22 @@
 }
 
 .intro__header {
+  width: 300px;
   margin: 0;
   margin-bottom: 34px;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
   text-align: center;
+}
+
+.intro--contest-page .intro__header,
+.intro--photo-page .intro__header {
+  margin-bottom: 0;
+}
+
+.intro__header br {
+  display: none;
 }
 
 .intro__pre-form-header {
@@ -35,4 +42,34 @@
   position: relative;
   bottom: -5px;
   left: -18px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .intro__header {
+    margin-bottom: 39px;
+    font-size: 40px;
+  }
+
+  .intro--contest-page .intro__header,
+  .intro--photo-page .intro__header {
+    width: auto;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .intro__header br {
+    display: inline;
+  }
+
+  .intro__image {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .intro__header {
+    margin-bottom: 51px;
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
