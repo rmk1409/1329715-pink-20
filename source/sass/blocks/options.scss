@@ -1,4 +1,13 @@
 .options {
-  padding: 130px 0 50px;
+  padding: 132px 0 41px;
   background-color: $grey;
+  overflow: hidden;
+}
+
+.options__rate-list {
+  display: flex;
+  width: 840px;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
 }

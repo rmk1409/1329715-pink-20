@@ -1,17 +1,30 @@
+.option {
+  width: 280px;
+}
+
 .option__name-and-price {
-  padding: 20px 0 35px;
+  padding: 14px 10px 11px;
+  text-transform: uppercase;
+  text-align: center;
   background-color: $dark-blue;
   color: $white;
-  text-transform: uppercase;
+}
+
+.option__name-and-price--standard {
+  border-left: 2px solid $grey;
+  border-right: 2px solid $grey;
 }
 
 .option__name {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
 }
 
 .option__price {
+  margin-top: -4px;
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
@@ -22,12 +35,20 @@
   color: $dark-blue;
   font-size: 14px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .option__advantages li {
-  padding: 24px 50px 25px 20px;
+  padding: 14px 50px 15px 20px;
+  border: 1px solid $grey-input;
 }
 
 .options__controls {
-  margin-top: 45px;
+  position: relative;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  margin-top: 35px;
+  transform: translateX(-50%);
 }

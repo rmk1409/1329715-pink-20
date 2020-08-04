@@ -1,19 +1,23 @@
 .contact-section {
-  padding-top: 50px;
+  padding-top: 42px;
+  text-align: center;
 }
 
 .contact-section__header {
   margin: 0;
-  margin-bottom: 45px;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
 }
 
+.contact-section__contact-list {
+  margin-top: 35px;
+}
+
 .contact-section__type {
   margin: 0;
-  margin-bottom: 13px;
+  margin-top: 20px;
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
@@ -21,10 +25,20 @@
 
 .contact-section__value {
   display: block;
-  margin-bottom: 31px;
+  margin-top: -1px;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   color: $light-red;
+}
+
+.contact-section__map {
+  padding-top: 34px;
+}
+
+.contact-section__img {
+  width: 100%;
+  height: 200px;
+  border: none;
 }
