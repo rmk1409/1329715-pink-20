@@ -19,3 +19,9 @@
     margin-left: -18px;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .social-list {
+    margin-left: 0;
+  }
+}

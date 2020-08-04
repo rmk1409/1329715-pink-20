@@ -25,6 +25,10 @@
   color: $light-red;
 }
 
+.effect-section__desktop-br {
+  display: none;
+}
+
 @media (min-width: $tablet-min-width) {
   .effect-section {
     display: block;
@@ -34,6 +38,7 @@
 @media (min-width: $desktop-min-width) {
   .effect-section {
     padding-top: 89px;
+    padding-bottom: 111px;
     background-color: $grey;
   }
 
@@ -59,11 +64,15 @@
 
   .effect-section__paragraph {
     margin-top: 25px;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
     width: 554px;
   }
 
   .effect-section__paragraph br {
     display: none;
+  }
+
+  .effect-section__paragraph .effect-section__desktop-br {
+    display: block;
   }
 }

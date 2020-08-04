@@ -34,6 +34,10 @@
   margin-right: auto;
 }
 
+.app-reviews__button {
+  display: none;
+}
+
 @media (min-width: $tablet-min-width) {
   .app-reviews {
     padding-top: 10px;
@@ -65,5 +69,34 @@
 
   .app-reviews__controls {
     margin-top: 30px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .app-reviews {
+    padding-top: 161px;
+  }
+
+  .app-reviews__message {
+    width: 710px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .app-reviews__author {
+    font-size: 24px;
+  }
+
+  .app-reviews__author-description {
+    margin-top: 2px;
+    font-size: 18px;
+  }
+
+  .app-reviews__controls {
+    display: none;
+  }
+
+  .app-reviews__button {
+    display: block;
   }
 }

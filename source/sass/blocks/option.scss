@@ -86,3 +86,36 @@
     padding-bottom: 8px;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .option {
+    width: 235px;
+  }
+
+  .option-description {
+    margin-top: 97px;
+  }
+
+  .option-description .option__advantages {
+    font-size: 18px;
+  }
+
+  .option__name {
+    font-size: 18px;
+  }
+
+  .option__price {
+    margin-top: 1px;
+    font-size: 24px;
+  }
+
+  .option__name-and-price {
+    padding-top: 16px;
+    padding-bottom: 21px;
+  }
+
+  .option__advantages li {
+    min-height: 61px;
+    padding: 13px 21px 14px;
+  }
+}

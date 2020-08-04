@@ -43,3 +43,15 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .options {
+    padding-top: 148px;
+    padding-bottom: 96px;
+  }
+
+  .options__container {
+    width: $desktop-min-width;
+    padding: 0 10px;
+  }
+}

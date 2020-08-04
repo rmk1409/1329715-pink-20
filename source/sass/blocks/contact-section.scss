@@ -84,3 +84,39 @@
     height: 374px;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .contact-section {
+    padding-top: 59px;
+  }
+
+  .contact-section__map {
+    padding-top: 19px;
+  }
+
+  .contact-section__header {
+    width: 500px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .contact-section__contact-list {
+    margin-top: 20px;
+  }
+
+  .contact-section__contact-list li:nth-child(2) {
+    order: 1;
+  }
+
+  .contact-section__contact-list li:last-child {
+    margin-top: 0;
+  }
+
+  .contact-section__value {
+    margin-top: 20px;
+  }
+
+  .contact-section__img {
+    height: 502px;
+  }
+}
