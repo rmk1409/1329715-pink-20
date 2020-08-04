@@ -140,6 +140,7 @@
           <article class="app-reviews__article">
             <blockquote>
               <cite class="app-reviews__author">Николай Петров</cite>
+              <p class="app-reviews__author-description">25 лет, водитель трамвая</p>
               <p class="app-reviews__message">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
                 познакомился со своей будущей женой в комментариях к выложенной фотографии!»
@@ -162,59 +163,97 @@
     </div>
   </section>
   <section class="options">
-    <ul class="options__rate-list options-option-list reset-list">
-      <li>
-        <article class="option option-base">
-          <div class="option__name-and-price">
-            <h3 class="option__name">База</h3>
-            <p class="option__price">1,99 usd</p>
-          </div>
-          <ul class="option__advantages reset-list">
-            <li class="option__pink-filter">Розовый фильтр</li>
-            <li class="option__smiles">Смайлики</li>
-            <li class="option__comments">Комментарии</li>
-          </ul>
-        </article>
-      </li>
-      <li>
-        <article class="option option-standard option-hit">
-          <div class="option__name-and-price option__name-and-price--standard">
-            <h3 class="option__name">Стандарт</h3>
-            <p class="option__price">3,99 usd</p>
-          </div>
-          <ul class="option__advantages reset-list">
-            <li class="option__pink-filter">Розовый фильтр</li>
-            <li class="option__smiles">Смайлики</li>
-            <li class="option__comments">Комментарии</li>
-          </ul>
-        </article>
-      </li>
-      <li>
-        <article class="option option-unlim">
-          <div class="option__name-and-price">
-            <h3 class="option__name">Анлим</h3>
-            <p class="option__price">9,99 usd</p>
-          </div>
-          <ul class="option__advantages reset-list">
-            <li class="option__pink-filter">Розовый фильтр</li>
-            <li class="option__smiles">Смайлики</li>
-            <li class="option__comments">Комментарии</li>
-          </ul>
-        </article>
-      </li>
-    </ul>
-    <div class="container">
-      <ul class="options__controls reset-list">
+    <div class="options__container">
+      <ul class="options__rate-list options-option-list reset-list">
         <li>
-          <a href="#" aria-label="1й тариф">1</a>
+          <article class="option option-description">
+            <ul class="option__advantages reset-list">
+              <li class="option__pink-filter">Розовый фильтр</li>
+              <li class="option__smiles">Смайлики</li>
+              <li class="option__comments">Комментарии</li>
+            </ul>
+          </article>
         </li>
         <li>
-          <a href="#" aria-label="2й тариф">2</a>
+          <article class="option option-base">
+            <div class="option__name-and-price">
+              <h3 class="option__name">База</h3>
+              <p class="option__price">1,99 usd</p>
+            </div>
+            <ul class="option__advantages reset-list">
+              <li class="option__pink-filter">
+                <span class="option__description">Розовый фильтр</span>
+                <img src="img/icon-yes.svg" width="31" height="21" alt="присутствует">
+              </li>
+              <li class="option__smiles">
+                <span class="option__description">Смайлики</span>
+                <img src="img/icon-no.svg" width="27" height="27" alt="отсутствует">
+              </li>
+              <li class="option__comments">
+                <span class="option__description">Комментарии</span>
+                <img src="img/icon-no.svg" width="27" height="27" alt="отсутствует">
+              </li>
+            </ul>
+          </article>
         </li>
         <li>
-          <a href="#" aria-label="3й тариф">3</a>
+          <article class="option option-standard option-hit">
+            <div class="option__name-and-price option__name-and-price--standard">
+              <h3 class="option__name">Стандарт</h3>
+              <p class="option__price">3,99 usd</p>
+            </div>
+            <ul class="option__advantages reset-list">
+              <li class="option__pink-filter">
+                <span class="option__description">Розовый фильтр</span>
+                <img src="img/icon-yes.svg" width="31" height="21" alt="присутствует">
+              </li>
+              <li class="option__smiles">
+                <span class="option__description">Смайлики</span>
+                <img src="img/icon-yes.svg" width="31" height="21" alt="присутствует">
+              </li>
+              <li class="option__comments">
+                <span class="option__description">Комментарии</span>
+                <img src="img/icon-no.svg" width="27" height="27" alt="отсутствует">
+              </li>
+            </ul>
+          </article>
+        </li>
+        <li>
+          <article class="option option-unlim">
+            <div class="option__name-and-price">
+              <h3 class="option__name">Анлим</h3>
+              <p class="option__price">9,99 usd</p>
+            </div>
+            <ul class="option__advantages reset-list">
+              <li class="option__pink-filter">
+                <span class="option__description">Розовый фильтр</span>
+                <img src="img/icon-yes.svg" width="31" height="21" alt="присутствует">
+              </li>
+              <li class="option__smiles">
+                <span class="option__description">Смайлики</span>
+                <img src="img/icon-yes.svg" width="31" height="21" alt="присутствует">
+              </li>
+              <li class="option__comments">
+                <span class="option__description">Комментарии</span>
+                <img src="img/icon-yes.svg" width="31" height="21" alt="присутствует">
+              </li>
+            </ul>
+          </article>
         </li>
       </ul>
+      <div class="container">
+        <ul class="options__controls reset-list">
+          <li>
+            <a href="#" aria-label="1й тариф">1</a>
+          </li>
+          <li>
+            <a href="#" aria-label="2й тариф">2</a>
+          </li>
+          <li>
+            <a href="#" aria-label="3й тариф">3</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
   <section class="contact-section">
@@ -223,7 +262,7 @@
       <ul class="contact-section__contact-list reset-list">
         <li>
           <p class="contact-section__type">Звоните:</p>
-          <a class="contact-section__value" href="tel:8-812-555-66-66">+7 (812) 555-66-66</a>
+          <a class="contact-section__value" href="tel:8-812-555-66-66">+7&nbsp;(812)&nbsp;555-66-66</a>
         </li>
         <li>
           <p class="contact-section__type">Пишите:</p>

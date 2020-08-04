@@ -13,3 +13,9 @@
   border: 3px solid rgba($dark-blue, 0.1);
   border-radius: 50%;
 }
+
+@media (min-width: $tablet-min-width) {
+  .social-list {
+    margin-left: -18px;
+  }
+}

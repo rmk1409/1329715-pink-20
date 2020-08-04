@@ -11,3 +11,35 @@
   position: relative;
   transform: translateX(-50%);
 }
+
+.options__controls {
+  position: relative;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  margin-top: 35px;
+  transform: translateX(-50%);
+}
+
+@media (min-width: $tablet-min-width) {
+  .options {
+    padding-top: 107px;
+    padding-bottom: 69px;
+  }
+
+  .options__container {
+    width: $tablet-min-width;
+    padding: 0 22px;
+    margin: 0 auto;
+  }
+
+  .options__rate-list {
+    left: auto;
+    transform: none;
+  }
+
+  .options__controls {
+    display: none;
+  }
+}

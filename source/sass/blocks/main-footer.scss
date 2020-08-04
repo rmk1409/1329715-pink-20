@@ -12,9 +12,13 @@
   .main-footer .container {
     flex-direction: row;
     align-items: center;
-    padding-top: 29px;
+    padding-top: 31px;
     padding-bottom: 51px;
     min-height: 127px;
+  }
+
+  .main-footer__logo {
+    margin-top: -9px;
   }
 }
 

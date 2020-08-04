@@ -2,8 +2,12 @@
   width: 280px;
 }
 
+.option-description {
+  display: none;
+}
+
 .option__name-and-price {
-  padding: 14px 10px 11px;
+  padding: 14px 10px 29px;
   text-transform: uppercase;
   text-align: center;
   background-color: $dark-blue;
@@ -24,6 +28,7 @@
 }
 
 .option__price {
+  margin: 0;
   margin-top: -4px;
   font-weight: 300;
   font-size: 18px;
@@ -39,16 +44,45 @@
 }
 
 .option__advantages li {
-  padding: 14px 50px 15px 20px;
-  border: 1px solid $grey-input;
-}
-
-.options__controls {
-  position: relative;
-  left: 50%;
+  padding: 10px 20px;
+  border: 1px solid #e5e5e5;
   display: flex;
   justify-content: space-between;
-  width: 60px;
-  margin-top: 35px;
-  transform: translateX(-50%);
+  align-items: center;
+  min-height: 61px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .option {
+    width: 154px;
+    text-align: center;
+  }
+
+  .option__advantages {
+    text-transform: none;
+  }
+
+  .option-description {
+    display: block;
+    margin-top: 78px;
+    text-align: center;
+  }
+
+  .option__description {
+    display: none;
+  }
+
+  .option__advantages li {
+    justify-content: center;
+    min-height: 47px;
+    padding: 8px 13px 7px;
+  }
+
+  .option-description .option__advantages li {
+    justify-content: flex-start;
+  }
+
+  .option__name-and-price {
+    padding-bottom: 8px;
+  }
 }
