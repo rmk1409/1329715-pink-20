@@ -53,21 +53,30 @@
   <div class="container">
     <h3 class="intro__pre-form-header">
       Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      <span>Пожалуйста, заполните форму ниже:</span>
     </h3>
-    <form method="post" action="#" class="intro__main-form main-form">
-      <fieldset class="main-form__name-fieldset name-fieldset reset-fieldset">
+  </div>
+  <form method="post" action="#" class="intro__main-form main-form main-form__outer-container">
+    <fieldset class="main-form__name-fieldset name-fieldset reset-fieldset main-form__inner-container">
+      <div class="main-form__label-and-input-div">
         <label class="main-form__label-for-input-text" for="family-name-input">Фамилия:</label>
         <input
           class="main-form__input-text" id="family-name-input" type="text" placeholder="Укажите фамилию *"
           name="family-name">
+      </div>
+      <div class="main-form__label-and-input-div">
         <label class="main-form__label-for-input-text" for="name-input">Имя:</label>
         <input class="main-form__input-text" id="name-input" type="text" placeholder="Введите ваше имя *" name="name">
+      </div>
+      <div class="main-form__label-and-input-div">
         <label class="main-form__label-for-input-text" for="father-name-input">Отчество:</label>
         <input
           class="main-form__input-text" id="father-name-input" type="text" placeholder="Ну и отчество тоже"
           name="father-name">
-      </fieldset>
-      <fieldset class="main-form__travel-fieldset travel-fieldset reset-fieldset">
+      </div>
+    </fieldset>
+    <fieldset class="main-form__travel-fieldset travel-fieldset reset-fieldset">
+      <div class="main-form__inner-container">
         <h3 class="main-form__header">Ваши безбашенные достижения в путешествии</h3>
         <label class="main-form__label-for-check-or-radio">
           <input type="checkbox" name="shark" checked>
@@ -93,18 +102,20 @@
           <input type="checkbox" name="destroyed-hotel">
           Разгромил отель
         </label>
-      </fieldset>
-      <fieldset class="main-form__contacts-fieldset contacts-fieldset reset-fieldset">
-        <label class="main-form__label-for-input-text" for="phone-number-input">Номер телефона</label>
-        <input
-          class="main-form__input-text" id="phone-number-input" type="tel" name="phone-number"
-          placeholder="Номер, пожалуйста">
-        <label class="main-form__label-for-input-text" for="address-input">Адрес почты</label>
-        <input
-          class="main-form__input-text" id="address-input" type="email" name="email" placeholder="Введите почту *">
-      </fieldset>
-      <fieldset class="main-form__platform-type-fieldset platform-type-fieldset reset-fieldset">
-        <h3 class="main-form__header">С какими приложением путешествовали?</h3>
+      </div>
+    </fieldset>
+    <fieldset class="main-form__contacts-fieldset contacts-fieldset reset-fieldset main-form__inner-container">
+      <label class="main-form__label-for-input-text" for="phone-number-input">Номер телефона</label>
+      <input
+        class="main-form__input-text" id="phone-number-input" type="tel" name="phone-number"
+        placeholder="Номер, пожалуйста">
+      <label class="main-form__label-for-input-text" for="address-input">Адрес почты</label>
+      <input
+        class="main-form__input-text" id="address-input" type="email" name="email" placeholder="Введите почту *">
+    </fieldset>
+    <fieldset class="main-form__platform-type-fieldset platform-type-fieldset reset-fieldset">
+      <div class="main-form__inner-container">
+        <h3 class="main-form__header">С каким приложением путешествовали?</h3>
         <label class="main-form__label-for-check-or-radio">
           <input type="radio" name="platform" value="ios" checked>
           Pink для iOS
@@ -117,15 +128,19 @@
           <input type="radio" name="platform" value="windows-phone">
           Windows Phone
         </label>
-      </fieldset>
+      </div>
+    </fieldset>
+    <div class="main-form__emotion-div main-form__inner-container">
       <label class="main-form__label-for-input-text main-form__emotion-label" for="message-textarea">Опишите свои
         эмоции</label>
-      <textarea class="main-form__input-text" id="message-textarea" name="message"
+      <textarea class="main-form__input-text main-form__emotion-text-area" id="message-textarea" name="message"
                 placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      <button class="main-form__submit-button button" type="submit">Отправить форму</button>
-      <p class="main-form__hint"><span>*</span> - Обязательные поля</p>
-    </form>
-  </div>
+      <div class="main-form__submit-button-and-hint">
+        <button class="main-form__submit-button button" type="submit">Отправить форму</button>
+        <p class="main-form__hint"><span>*</span> &#9473; Обязательные поля</p>
+      </div>
+    </div>
+  </form>
 </main>
 <footer class="main-footer">
   <div class="container">

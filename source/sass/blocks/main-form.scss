@@ -1,16 +1,19 @@
 .main-form__header {
-  margin: 0;
-  margin-bottom: 44px;
+  margin: 0 auto 42px;
+  width: 250px;
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
+  font-weight: normal;
   text-transform: uppercase;
+  text-align: center;
   color: $light-red;
 }
 
 .main-form__label-for-input-text {
   display: block;
-  margin-bottom: 17px;
+  margin-top: 5px;
+  margin-left: 23px;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -18,22 +21,34 @@
 }
 
 .main-form__input-text {
-  margin-bottom: 29px;
-  padding: 23px 20px;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  padding: 15px 20px 14px;
+  width: 100%;
   font-size: 18px;
+  font-family: inherit;
   line-height: 30px;
   color: $dark-blue;
   border: 2px solid $grey-input;
 }
 
 .main-form__emotion-label {
-  margin-top: 42px;
-  margin-bottom: 24px;
+  margin-top: 34px;
+  margin-left: 0;
+  text-align: center;
+}
+
+.main-form__emotion-text-area {
+  margin-top: 9px;
+  margin-bottom: 0;
+  padding-top: 13px;
+  min-height: 201px;
+  resize: none;
 }
 
 .main-form__label-for-check-or-radio {
   display: block;
-  margin-bottom: 47px;
+  margin-bottom: 52px;
   font-size: 18px;
   line-height: 30px;
   color: $dark-blue;
@@ -44,21 +59,148 @@
 }
 
 .main-form__submit-button {
-  margin-top: 52px;
-  margin-bottom: 46px;
+  margin-top: 42px;
+  margin-bottom: 0;
+  min-height: 64px;
   background-color: $dark-green;
   color: $white;
+  text-transform: uppercase;
+  border-radius: 1px;
 }
 
 .main-form__hint {
   margin: 0;
-  margin-bottom: 26px;
+  margin-top: 34px;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  text-align: center;
   color: $dark-blue;
 
   & span {
     color: $light-red;
+  }
+}
+
+.main-form__travel-fieldset {
+  margin-top: 30px;
+}
+
+.main-form__inner-container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .main-form__inner-container {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-form__outer-container {
+    width: 660px;
+    margin: 64px auto 0;
+    padding: 0 20px;
+  }
+
+  .main-form {
+    display: grid;
+  }
+
+  .main-form__label-and-input-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+
+  .main-form__label-for-input-text {
+    display: inline-block;
+    margin: 0;
+    margin-right: 18px;
+  }
+
+  .main-form__input-text {
+    flex-grow: 1;
+    width: auto;
+  }
+
+  .main-form__emotion-div {
+    margin-top: 79px;
+    min-height: 289px;
+  }
+
+  .main-form__travel-fieldset {
+    margin-top: 0;
+    background-color: $white;
+  }
+
+  .main-form__emotion-text-area {
+    width: 496px;
+    min-height: 193px;
+  }
+
+  .main-form__submit-button {
+    width: 300px;
+  }
+
+  .main-form__submit-button-and-hint {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-form__platform-type-fieldset {
+    grid-row: 2;
+  }
+
+  .main-form__contacts-fieldset {
+    grid-row: 3;
+    margin-top: 98px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .main-form {
+    grid-template-columns: 433px 431px;
+    grid-auto-rows: min-content;
+    gap: 60px 74px;
+  }
+
+  .main-form__outer-container {
+    width: 960px;
+    margin-top: 79px;
+    padding: 0 10px;
+  }
+
+  .main-form__platform-type-fieldset {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .main-form__contacts-fieldset {
+    grid-row: 2;
+    grid-column: 1/-1;
+    margin-top: 0;
+    min-height: min-content;
+  }
+
+  .main-form__travel-fieldset {
+    grid-row: 3;
+    grid-column: 1/-1;
+
+    .main-form__inner-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .main-form__emotion-div {
+    grid-column: 1/-1;
+  }
+
+  .main-form__emotion-text-area {
+    width: 816px;
+    min-height: 124px;
   }
 }

@@ -34,17 +34,28 @@
 }
 
 .intro__pre-form-header {
-  margin: 54px 20px;
+  margin-top: 44px;
+  margin-bottom: 0;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   color: $dark-blue;
+  text-align: center;
+}
+
+.intro__pre-form-header span {
+  display: none;
 }
 
 .intro__image {
   position: relative;
   bottom: -5px;
   left: -21px;
+}
+
+.intro__main-form {
+  margin-top: 30px;
+  padding-bottom: 22px;
 }
 
 @media (min-width: $tablet-min-width) {
@@ -79,6 +90,16 @@
   .intro__image {
     display: none;
   }
+
+  .intro__pre-form-header {
+    margin: 91px auto 0;
+    width: 490px;
+    font-size: 18px;
+  }
+
+  .intro__pre-form-header span {
+    display: inline;
+  }
 }
 
 @media (min-width: $desktop-min-width) {
@@ -97,5 +118,13 @@
   .intro--photo-page {
     padding-top: 18px;
     padding-bottom: 90px;
+  }
+
+  .intro__pre-form-header {
+    width: 756px;
+  }
+
+  .intro__main-form {
+    margin-top: 10px;
   }
 }
