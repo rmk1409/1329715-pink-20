@@ -118,6 +118,8 @@
   }
 
   .options__name-and-price-header {
+    padding-bottom: 8px;
+
     &:first-child {
       display: table-cell;
       background-color: transparent;
@@ -140,10 +142,6 @@
 
   .options__advantage span {
     display: none;
-  }
-
-  .options__name-and-price-header {
-    padding-bottom: 8px;
   }
 
   .options__controls {
