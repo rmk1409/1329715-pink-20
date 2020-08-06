@@ -1,5 +1,5 @@
 .options {
-  padding: 132px 0 44px;
+  padding: 140px 0 49px;
   background-color: $grey;
   overflow: hidden;
 }
@@ -116,13 +116,13 @@
   display: flex;
   justify-content: space-between;
   width: 60px;
-  margin-top: 35px;
+  margin-top: 45px;
   transform: translateX(-50%);
 }
 
 @media (min-width: $tablet-min-width) {
   .options {
-    padding-top: 107px;
+    padding-top: 115px;
     padding-bottom: 69px;
   }
 
