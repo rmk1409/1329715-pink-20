@@ -166,83 +166,59 @@
   </section>
   <section class="options">
     <div class="options__container">
-      <ul class="options__rate-list options-option-list reset-list">
-        <li>
-          <article class="option option-description">
-            <ul class="option__advantages reset-list">
-              <li class="option__pink-filter">Розовый фильтр</li>
-              <li class="option__smiles">Смайлики</li>
-              <li class="option__comments">Комментарии</li>
-            </ul>
-          </article>
-        </li>
-        <li>
-          <article class="option option-base">
-            <div class="option__name-and-price">
-              <h3 class="option__name">База</h3>
-              <p class="option__price">1,99 usd</p>
-            </div>
-            <ul class="option__advantages reset-list">
-              <li class="option__pink-filter">
-                <span class="option__description">Розовый фильтр</span>
-                <img src="img/icon-yes.svg" width="31" height="21" alt="присутствует">
-              </li>
-              <li class="option__smiles">
-                <span class="option__description">Смайлики</span>
-                <img src="img/icon-no.svg" width="27" height="27" alt="отсутствует">
-              </li>
-              <li class="option__comments">
-                <span class="option__description">Комментарии</span>
-                <img src="img/icon-no.svg" width="27" height="27" alt="отсутствует">
-              </li>
-            </ul>
-          </article>
-        </li>
-        <li>
-          <article class="option option-standard option-hit">
-            <div class="option__name-and-price option__name-and-price--standard">
-              <h3 class="option__name">Стандарт</h3>
-              <p class="option__price">3,99 usd</p>
-            </div>
-            <ul class="option__advantages reset-list">
-              <li class="option__pink-filter">
-                <span class="option__description">Розовый фильтр</span>
-                <img src="img/icon-yes.svg" width="31" height="21" alt="присутствует">
-              </li>
-              <li class="option__smiles">
-                <span class="option__description">Смайлики</span>
-                <img src="img/icon-yes.svg" width="31" height="21" alt="присутствует">
-              </li>
-              <li class="option__comments">
-                <span class="option__description">Комментарии</span>
-                <img src="img/icon-no.svg" width="27" height="27" alt="отсутствует">
-              </li>
-            </ul>
-          </article>
-        </li>
-        <li>
-          <article class="option option-unlim">
-            <div class="option__name-and-price">
-              <h3 class="option__name">Анлим</h3>
-              <p class="option__price">9,99 usd</p>
-            </div>
-            <ul class="option__advantages reset-list">
-              <li class="option__pink-filter">
-                <span class="option__description">Розовый фильтр</span>
-                <img src="img/icon-yes.svg" width="31" height="21" alt="присутствует">
-              </li>
-              <li class="option__smiles">
-                <span class="option__description">Смайлики</span>
-                <img src="img/icon-yes.svg" width="31" height="21" alt="присутствует">
-              </li>
-              <li class="option__comments">
-                <span class="option__description">Комментарии</span>
-                <img src="img/icon-yes.svg" width="31" height="21" alt="присутствует">
-              </li>
-            </ul>
-          </article>
-        </li>
-      </ul>
+      <table class="options__table">
+        <tr>
+          <th class="options__name-and-price-header options__element-display-none"></th>
+          <th class="options__name-and-price-header">
+            <h3 class="options__option-name">База</h3>
+            <p class="options__option-price">1,99 usd</p>
+          </th>
+          <th class="options__name-and-price-header">
+            <h3 class="options__option-name">Стандарт</h3>
+            <p class="options__option-price">3,99 usd</p>
+          </th>
+          <th class="options__name-and-price-header">
+            <h3 class="options__option-name">Анлим</h3>
+            <p class="options__option-price">9,99 usd</p>
+          </th>
+        </tr>
+        <tr>
+          <td class="options__advantage-description options__element-display-none">Розовый фильтр</td>
+          <td class="options__advantage options__advantage-yes">
+            <span>Розовый фильтр</span>
+          </td>
+          <td class="options__advantage options__advantage-yes">
+            <span>Розовый фильтр</span>
+          </td>
+          <td class="options__advantage options__advantage-yes">
+            <span>Розовый фильтр</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="options__advantage-description options__element-display-none">Смайлики</td>
+          <td class="options__advantage options__advantage-no">
+            <span>Смайлики</span>
+          </td>
+          <td class="options__advantage options__advantage-yes">
+            <span>Смайлики</span>
+          </td>
+          <td class="options__advantage options__advantage-yes">
+            <span>Смайлики</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="options__advantage-description options__element-display-none">Комментарии</td>
+          <td class="options__advantage options__advantage-no">
+            <span>Комментарии</span>
+          </td>
+          <td class="options__advantage options__advantage-no">
+            <span>Комментарии</span>
+          </td>
+          <td class="options__advantage options__advantage-yes">
+            <span>Комментарии</span>
+          </td>
+        </tr>
+      </table>
       <div class="container">
         <ul class="options__controls reset-list">
           <li>
