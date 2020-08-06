@@ -71,8 +71,8 @@
     padding-top: 73px;
   }
 
-  .photos__first-photo-and-comment-section {
-    min-height: 680px;
+  .photos__link {
+    min-height: 509px;
   }
 
   .photos__header {
@@ -83,12 +83,25 @@
     font-size: 18px;
   }
 
-  .photos__header br {
+  .photos__header br,
+  .photos__block br {
     display: none;
   }
 
   .photos__block {
-    padding: 30px 30px 32px 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 155px;
+    margin-bottom: 0;
+    padding: 23px 30px 25px 30px;
+  }
+
+  .photos__first-photo-and-comment-section .photos__block {
+    width: auto;
+    min-height: auto;
+    margin-bottom: 50px;
   }
 
   .photos__like--bottom {
@@ -97,6 +110,10 @@
 
   .photos__like--top {
     display: block;
+  }
+
+  .photos__like {
+    margin-top: auto;
   }
 
   .photos__author-and-upper-like {
@@ -109,15 +126,24 @@
   }
 
   .photos__review-list {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    grid-template-columns: repeat(2, 300px);
+  }
+
+  .photos__review-list li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photos__review-list .photos__link {
+    min-height: 300px;
   }
 }
 
 @media (min-width: $desktop-min-width) {
   .photos__block {
-    padding: 31px 27px 30px 27px;
+    padding: 22px 27px 25px 27px;
   }
 
   .photos__review-list {
@@ -133,5 +159,14 @@
 
   .photos__first-photo-and-comment-section {
     min-height: 651px;
+  }
+
+  .photos__first-photo-and-comment-section .photos__block {
+    padding-top: 18px;
+    padding-bottom: 24px;
+  }
+
+  .photos__review-list .photos__link {
+    min-height: 400px;
   }
 }

@@ -32,6 +32,7 @@
 
   .download-section__description {
     width: 308px;
+    margin-left: -5px;
     font-size: 18px;
   }
 
@@ -49,5 +50,7 @@
 
   .download-section__download-button {
     margin-bottom: 67px;
+    padding: 17px 28px;
+    font-size: 21px;
   }
 }

@@ -6,7 +6,7 @@
 
 .advantages-list__header {
   margin-top: 29px;
-  margin-bottom: 12px;
+  margin-bottom: 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -14,6 +14,7 @@
 }
 
 .advantages-list__paragraph {
+  margin-top: 13px;
   font-size: 14px;
   line-height: 24px;
 }
@@ -58,8 +59,8 @@
 
     &::before {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: -2px;
+      left: 4px;
       content: "";
       width: 292px;
       height: 382px;
@@ -69,10 +70,12 @@
   }
 
   .advantages-list__change-the-world-li::before {
+    left: 7px;
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
   }
 
   .advantages-list__find-new-friends-li::before {
+    left: 10px;
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
   }
 

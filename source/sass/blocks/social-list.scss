@@ -5,11 +5,23 @@
 }
 
 .social-list__link {
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 3px solid rgba($dark-blue, 0.1);
   border-radius: 50%;
+}
+
+@media (min-width: $tablet-min-width) {
+  .social-list {
+    margin-left: -18px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .social-list {
+    margin-left: 0;
+  }
 }

@@ -6,7 +6,7 @@ body {
 
 img {
   max-width: 100%;
-  height: auto;
+  //height: auto;
 }
 
 .button {
@@ -14,7 +14,8 @@ img {
   justify-content: center;
   align-items: center;
   width: 280px;
-  padding: 16px 38px;
+  padding: 16px 34px;
+  font-family: inherit;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
@@ -31,6 +32,7 @@ img {
 
 .reset-fieldset {
   margin: 0;
+  padding: 0;
   border: none;
 }
 

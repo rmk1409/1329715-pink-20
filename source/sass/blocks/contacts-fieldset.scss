@@ -1,3 +1,9 @@
 .contacts-fieldset {
-  padding: 44px 20px;
+  padding: 27px 20px 29px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .contacts-fieldset {
+    min-height: 306px;
+  }
 }

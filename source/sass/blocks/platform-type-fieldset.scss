@@ -1,4 +1,19 @@
 .platform-type-fieldset {
-  padding: 42px 20px 44px;
+  padding: 40px 20px 44px;
   background-color: $grey;
+}
+
+.platform-type-fieldset .main-form__header {
+  margin-bottom: 38px;
+}
+
+.platform-type-fieldset .main-form__label-for-check-or-radio {
+  margin-bottom: 46px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .platform-type-fieldset {
+    background-color: $white;
+    padding-top: 0;
+  }
 }
