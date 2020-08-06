@@ -18,7 +18,7 @@
 .options__table td {
   width: 280px;
   height: 60px;
-  padding: 10px 50px 10px 20px;
+  padding: 9px 50px 10px 20px;
   font-size: 14px;
   line-height: 30px;
   border: 2px solid $grey2;
@@ -63,8 +63,8 @@
   &::after {
     position: absolute;
     content: "";
-    right: 20px;
-    top: 18px;
+    right: 19px;
+    top: 17px;
     width: 31px;
     height: 21px;
     background-image: url("../img/icon-yes.svg");

@@ -16,7 +16,6 @@
 .intro__header {
   width: 280px;
   margin: 0;
-  margin-bottom: 24px;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
@@ -26,7 +25,6 @@
 .intro--contest-page .intro__header,
 .intro--photo-page .intro__header {
   line-height: 33px;
-  margin-bottom: 0;
 }
 
 .intro__header br {
@@ -51,6 +49,7 @@
   position: relative;
   bottom: -5px;
   left: -21px;
+  margin-top: 24px;
 }
 
 .intro__main-form {
@@ -59,24 +58,27 @@
 }
 
 @media (min-width: $tablet-min-width) {
+  .intro {
+    padding-top: 95px;
+  }
+
   .intro__header {
-    margin-top: 71px;
-    margin-bottom: 2px;
     margin-left: 10px;
     font-size: 40px;
   }
 
   .intro--contest-page {
+    padding-top: 68px;
     padding-bottom: 60px;
   }
 
   .intro--photo-page {
-    padding-bottom: 127px;
+    padding-top: 67px;
+    padding-bottom: 128px;
   }
 
   .intro--photo-page .intro__header,
   .intro--contest-page .intro__header {
-    margin-top: 40px;
     margin-left: 0;
     width: auto;
     font-size: 50px;
@@ -103,20 +105,22 @@
 }
 
 @media (min-width: $desktop-min-width) {
+  .intro {
+    padding-top: 99px;
+  }
+
   .intro__header {
-    margin-top: 75px;
-    margin-bottom: 7px;
     font-size: 50px;
     line-height: 68px;
   }
 
   .intro--contest-page {
-    padding-top: 18px;
+    padding-top: 58px;
     padding-bottom: 88px;
   }
 
   .intro--photo-page {
-    padding-top: 18px;
+    padding-top: 57px;
     padding-bottom: 90px;
   }
 

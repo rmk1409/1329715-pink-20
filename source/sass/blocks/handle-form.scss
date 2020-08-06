@@ -1,5 +1,6 @@
 .handle-form {
-  padding-top: 23px;
+  margin-bottom: 5px;
+  padding-top: 43px;
   text-align: center;
 }
 
@@ -18,11 +19,13 @@
 }
 
 .handle-form__form {
-  margin-top: 42px;
-  margin-bottom: 3px;
-  padding: 20px;
-  padding-bottom: 0;
+  margin: 0;
+  padding: 20px 20px 0;
   background-color: $grey;
+}
+
+.handle-form__outer-container {
+  margin-top: 42px;
 }
 
 .handle-form__fieldsets-div {
@@ -59,14 +62,9 @@
   border: none;
 }
 
-.switcher {
-  border: none;
-  background-color: transparent;
-}
-
 .handle-form__buttons-div {
   margin-top: 34px;
-  padding: 38px 0 41px;
+  padding: 39px 0 40px;
   position: relative;
 
   &::before {
@@ -100,7 +98,7 @@
     padding-top: 64px;
   }
 
-  .handle-form__form {
+  .handle-form__outer-container {
     margin-top: 70px;
   }
 
@@ -180,9 +178,15 @@
 }
 
 @media (min-width: $desktop-min-width) {
+  .handle-form__outer-container {
+    width: 960px;
+    margin: 67px auto 0;
+    padding: 0 10px;
+  }
+
   .handle-form {
     margin-bottom: 34px;
-    padding-top: 56px;
+    padding-top: 57px;
   }
 
   .handle-form__form {
@@ -218,11 +222,5 @@
   .handle-form__inner-container {
     width: auto;
     padding: 0;
-  }
-
-  .handle-form__outer-container {
-    width: 960px;
-    margin: 0 auto;
-    padding: 0 10px;
   }
 }
