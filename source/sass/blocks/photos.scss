@@ -15,6 +15,12 @@
   padding-top: 50px;
 }
 
+.photos__first-photo-and-comment-section .photos__link {
+  width: 320px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .photos__review-list {
   display: flex;
   flex-wrap: wrap;
@@ -66,6 +72,29 @@
   display: block;
   text-align: center;
   line-height: 0;
+
+  &--panorama {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "Панорама дня";
+      right: 20px;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 140px;
+      height: 36px;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: $white;
+      background-color: $light-red;
+    }
+  }
 }
 
 .photos__photo-fair {
@@ -78,8 +107,16 @@
     padding-top: 92px;
   }
 
-  .photos__link {
+  .photos__first-photo-and-comment-section .photos__link {
+    width: 660px;
     min-height: 509px;
+
+    &--panorama {
+      &::after {
+        top: 57px;
+        font-style: normal;
+      }
+    }
   }
 
   .photos__header {
@@ -110,7 +147,7 @@
   }
 
   .photos__first-photo-and-comment-section .photos__block {
-    width: auto;
+    width: 660px;
     min-height: auto;
   }
 
@@ -167,12 +204,26 @@
   }
 
   .photos__first-photo-and-comment-section {
-    padding-top: 90px;
-    min-height: 651px;
+    padding-top: 88px;
+    overflow: hidden;
+  }
+
+  .photos__first-photo-and-comment-section .photos__link {
+    width: 1200px;
+    min-height: 506px;
+
+    &--panorama {
+      &::after {
+        top: 54px;
+        right: 130px;
+        font-style: normal;
+      }
+    }
   }
 
   .photos__first-photo-and-comment-section .photos__block {
-    padding-top: 18px;
+    width: auto;
+    padding-top: 24px;
     padding-bottom: 24px;
   }
 
