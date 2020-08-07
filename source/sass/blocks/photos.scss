@@ -56,12 +56,23 @@
 }
 
 .photos__like {
+  position: relative;
   margin: 12px 0 0;
   padding-left: 30px;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: $light-red;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 4px;
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/icon-heart.svg");
+  }
 }
 
 .photos__like--top {
@@ -147,7 +158,7 @@
   }
 
   .photos__first-photo-and-comment-section .photos__block {
-    width: 660px;
+    width: 620px;
     min-height: auto;
   }
 
@@ -157,12 +168,17 @@
 
   .photos__like--top {
     display: block;
-    padding-right: 30px;
+    padding-right: 29px;
   }
 
   .photos__like {
     margin-top: auto;
     padding-left: 0;
+
+    &::before {
+      right: 0;
+      left: auto;
+    }
   }
 
   .photos__author-and-upper-like {
@@ -229,5 +245,15 @@
 
   .photos__review-list .photos__link {
     min-height: 400px;
+  }
+
+  .photos__like {
+    &::before {
+      right: 4px;
+    }
+  }
+
+  .photos__like--top {
+    padding-right: 33px;
   }
 }
