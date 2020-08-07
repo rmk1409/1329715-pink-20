@@ -5,6 +5,14 @@
   justify-content: center;
   text-decoration: none;
   color: $white;
+
+  &:hover {
+    color: $light-red;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .nav-menu--opened {
@@ -19,6 +27,10 @@
 @media (min-width: $desktop-min-width) {
   .nav-menu__link {
     padding: 0;
+
+    &:active {
+      color: white;
+    }
   }
 
   .nav-menu__link--active {

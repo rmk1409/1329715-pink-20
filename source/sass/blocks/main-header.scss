@@ -27,6 +27,17 @@
   margin: 21px 0 15px 20px;
 }
 
+.main-header__logo svg {
+  &:hover {
+    fill: $light-red;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
+}
+
 .main-header__menu-with-toggle-button {
   position: relative;
 }
@@ -35,9 +46,6 @@
   position: absolute;
   top: -44px;
   right: 20px;
-}
-
-.main-header__button-toggle {
   width: 50px;
   height: 24px;
   padding: 0;
