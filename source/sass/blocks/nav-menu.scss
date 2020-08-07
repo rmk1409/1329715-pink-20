@@ -7,6 +7,15 @@
   color: $white;
 }
 
+.nav-menu--opened {
+  display: block;
+  background-color: $dark-blue;
+}
+
+.nav-menu--opened .nav-menu__link {
+  box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
 @media (min-width: $desktop-min-width) {
   .nav-menu__link {
     padding: 0;
@@ -15,5 +24,10 @@
   .nav-menu__link--active {
     padding-bottom: 10px;
     border-bottom: 2px solid $white;
+  }
+
+  .nav-menu {
+    display: flex;
+    background-color: transparent;
   }
 }

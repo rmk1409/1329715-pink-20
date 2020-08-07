@@ -9,12 +9,11 @@
 <body>
 <header class="main-header">
   <nav class="main-header__nav">
-    <div class="container">
+    <div class="main-header__container">
       <a class="main-header__logo" href="index.html">
         <svg
           id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="74.426px" height="22.859px"
-          viewBox="0 0 74.426 22.859"
-          enable-background="new 0 0 74.426 22.859" xml:space="preserve" fill="#ffffff">
+          viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve" fill="#ffffff">
           <g>
             <path
               d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
@@ -27,21 +26,23 @@
           </g>
       </svg>
       </a>
-      <button class="main-header__button-toggle button" type="button" aria-label="Открыть / закрыть меню"></button>
-      <ul class="main-header__nav-menu nav-menu reset-list">
-        <li>
-          <a class="nav-menu__link" href="index.html">Главная</a>
-        </li>
-        <li>
-          <a class="nav-menu__link nav-menu__link--active">Фотографии</a>
-        </li>
-        <li>
-          <a class="nav-menu__link" href="form.html">Конкурс</a>
-        </li>
-        <li>
-          <a class="nav-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
+      <div class="main-header__menu-with-toggle-button">
+        <button class="main-header__button-toggle button" type="button" aria-label="Открыть / закрыть меню"></button>
+        <ul class="main-header__nav-menu nav-menu reset-list">
+          <li>
+            <a class="nav-menu__link" href="index.html">Главная</a>
+          </li>
+          <li>
+            <a class="nav-menu__link nav-menu__link--active">Фотографии</a>
+          </li>
+          <li>
+            <a class="nav-menu__link" href="form.html">Конкурс</a>
+          </li>
+          <li>
+            <a class="nav-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
   <section class="intro intro--photo-page">
@@ -328,5 +329,6 @@
     </section>
   </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

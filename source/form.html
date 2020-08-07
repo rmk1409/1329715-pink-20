@@ -9,7 +9,7 @@
 <body>
 <header class="main-header">
   <nav class="main-header__nav">
-    <div class="container">
+    <div class="main-header__container">
       <a class="main-header__logo" href="index.html">
         <svg
           id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="74.426px" height="22.859px"
@@ -26,21 +26,23 @@
           </g>
       </svg>
       </a>
-      <button class="main-header__button-toggle button" type="button" aria-label="Открыть / закрыть меню"></button>
-      <ul class="main-header__nav-menu nav-menu reset-list">
-        <li>
-          <a class="nav-menu__link" href="index.html">Главная</a>
-        </li>
-        <li>
-          <a class="nav-menu__link" href="photo.html">Фотографии</a>
-        </li>
-        <li>
-          <a class="nav-menu__link nav-menu__link--active">Конкурс</a>
-        </li>
-        <li>
-          <a class="nav-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
+      <div class="main-header__menu-with-toggle-button">
+        <button class="main-header__button-toggle button" type="button" aria-label="Открыть / закрыть меню"></button>
+        <ul class="main-header__nav-menu nav-menu reset-list">
+          <li>
+            <a class="nav-menu__link" href="index.html">Главная</a>
+          </li>
+          <li>
+            <a class="nav-menu__link" href="photo.html">Фотографии</a>
+          </li>
+          <li>
+            <a class="nav-menu__link nav-menu__link--active">Конкурс</a>
+          </li>
+          <li>
+            <a class="nav-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
   <section class="intro intro--contest-page">
@@ -220,5 +222,6 @@
     </section>
   </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
