@@ -142,10 +142,6 @@
 }
 
 @media (min-width: $tablet-min-width) {
-  .main-header__nav--full .main-header__logo {
-    margin-bottom: 41px;
-  }
-
   .main-header--index-page {
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 100%, 50% 100%;
