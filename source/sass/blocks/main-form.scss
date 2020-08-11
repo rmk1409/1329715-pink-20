@@ -89,7 +89,8 @@
 .main-form__inner-container {
   width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (min-width: $tablet-min-width) {

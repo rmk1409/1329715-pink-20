@@ -1,5 +1,5 @@
 .advantages-list {
-  padding-top: 60px;
+  padding-top: 50px;
   color: $dark-blue;
   text-align: center;
 }
@@ -59,7 +59,7 @@
 
     &::before {
       position: absolute;
-      top: -2px;
+      top: 0;
       left: 4px;
       content: "";
       width: 292px;

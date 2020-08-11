@@ -1,6 +1,6 @@
 .nav-menu__link {
   display: flex;
-  padding: 25px;
+  padding: 16px;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -18,6 +18,7 @@
 .nav-menu--opened {
   display: block;
   background-color: $dark-blue;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .nav-menu--opened .nav-menu__link {

@@ -33,6 +33,10 @@
 }
 
 @media (min-width: $tablet-min-width) {
+  .main-header--index-page-opened .download-section {
+    padding-bottom: 111px;
+  }
+
   .download-section {
     padding-top: 30px;
     padding-bottom: 113px;

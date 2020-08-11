@@ -1,5 +1,5 @@
 .advantages-section {
-  margin-top: 23px;
+  margin-top: 33px;
   background-color: $grey;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 @media (min-width: $tablet-min-width) {
   .advantages-section {
     position: relative;
-    margin-top: 26px;
+    margin-top: 25px;
   }
 
   .advantages-section .container {
@@ -53,7 +53,7 @@
 
 @media (min-width: $desktop-min-width) {
   .advantages-section {
-    margin-top: 47px;
+    margin-top: 58px;
   }
 
   .advantages-section .container {
