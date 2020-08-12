@@ -6,9 +6,11 @@
   background-position: 50% 0;
 }
 
+.main-header--index-page .intro {
+  min-height: 395px;
+}
+
 .main-header__nav {
-  padding-top: 22px;
-  padding-bottom: 16px;
   background-color: rgba($black, 0.3);
 
   .container {
@@ -16,15 +18,106 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  &::before,
+  &::after {
+    content: "";
+    overflow: hidden;
+    display: block;
+  }
+}
+
+.main-header--index-page-opened {
+  background-position-y: 262px;
+}
+
+.main-header__nav--full {
+  background-color: $dark-blue;
+}
+
+.main-header__logo {
+  display: block;
+  width: 150px;
+  margin: 23px 0 15px 20px;
+}
+
+.main-header__logo svg {
+  &:hover {
+    fill: $light-red;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
+}
+
+.main-header__menu-with-toggle-button {
+  position: relative;
 }
 
 .main-header__button-toggle {
+  position: absolute;
+  top: -44px;
+  right: 21px;
+  content: "";
   width: 50px;
-  height: 24px;
+  height: 25px;
   padding: 0;
-  background-color: transparent;
-  background-image: url("../img/icon-menu-burger.svg");
-  background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: $white;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 0 10px, 0 20px;
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      color: $light-red;
+      background-color: $light-red;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-header__button-toggle--opened {
+  top: -46px;
+  right: 22px;
+  width: 19px;
+  height: 23px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 4px;
+    box-shadow: none;
+    transform-origin: top left;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 4px;
+    background-color: $white;
+    transform-origin: top right;
+    transform: rotate(-45deg);
+  }
 }
 
 .main-header__nav-menu {
@@ -42,10 +135,30 @@
   }
 }
 
+@media (max-width: ($tablet-min-width - 1px)) {
+  .main-header__nav--full .main-header__logo {
+    margin-bottom: 18px;
+  }
+}
+
 @media (min-width: $tablet-min-width) {
-  .main-header__nav {
-    padding-top: 43px;
-    padding-bottom: 38px;
+  .main-header--index-page {
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 100%, 50% 100%;
+  }
+
+  .main-header--index-page .intro {
+    min-height: auto;
+  }
+
+  .main-header__logo {
+    margin-top: 42px;
+    margin-bottom: 39px;
+  }
+
+  .main-header__button-toggle {
+    top: -66px;
+    right: 20px;
   }
 }
 
@@ -54,20 +167,42 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 
+  .main-header__container {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-header--index-page {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: 50% 0;
+    background-size: cover;
+  }
+
+  .main-header__menu-with-toggle-button {
+    width: 620px;
+    margin-top: 10px;
+  }
+
   .main-header__button-toggle {
     display: none;
   }
 
+  .main-header__logo {
+    margin-top: 44px;
+    margin-bottom: 38px;
+  }
+
   .main-header__nav {
-    padding-top: 46px;
-    padding-bottom: 36px;
+    background-color: rgba($black, 0.3);
   }
 
   .main-header__nav-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 620px;
     font-weight: normal;
     font-size: 18px;
     line-height: 18px;

@@ -1,5 +1,5 @@
 .options {
-  padding: 132px 0 44px;
+  padding: 140px 0 49px;
   background-color: $grey;
   overflow: hidden;
 }
@@ -18,7 +18,7 @@
 .options__table td {
   width: 280px;
   height: 60px;
-  padding: 10px 50px 10px 20px;
+  padding: 9px 50px 10px 20px;
   font-size: 14px;
   line-height: 30px;
   border: 2px solid $grey2;
@@ -34,6 +34,36 @@
   background-color: $dark-blue;
   color: $white;
   border: 1px solid $grey2;
+}
+
+.options__name-and-price-header--hit {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -1px;
+    width: 74px;
+    height: 74px;
+    background-image: url("../img/bg-hit-my.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    position: absolute;
+    content: "Хит";
+    top: 15px;
+    left: -10px;
+    width: 74px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $white;
+    transform: rotate(-45deg);
+  }
 }
 
 .options__option-name {
@@ -63,8 +93,8 @@
   &::after {
     position: absolute;
     content: "";
-    right: 20px;
-    top: 18px;
+    right: 19px;
+    top: 17px;
     width: 31px;
     height: 21px;
     background-image: url("../img/icon-yes.svg");
@@ -86,13 +116,13 @@
   display: flex;
   justify-content: space-between;
   width: 60px;
-  margin-top: 35px;
+  margin-top: 45px;
   transform: translateX(-50%);
 }
 
 @media (min-width: $tablet-min-width) {
   .options {
-    padding-top: 107px;
+    padding-top: 115px;
     padding-bottom: 69px;
   }
 
@@ -100,6 +130,19 @@
     width: $tablet-min-width;
     padding: 0 22px;
     margin: 0 auto;
+  }
+
+  .options__name-and-price-header--hit {
+    &::before {
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/bg-hit-tablet-my.svg");
+    }
+
+    &::after {
+      top: 8px;
+      left: -18px;
+    }
   }
 
   .options__table {
@@ -153,6 +196,19 @@
   .options {
     padding-top: 148px;
     padding-bottom: 96px;
+  }
+
+  .options__name-and-price-header--hit {
+    &::before {
+      width: 74px;
+      height: 74px;
+      background-image: url("../img/bg-hit-my.svg");
+    }
+
+    &::after {
+      top: 14px;
+      left: -7px;
+    }
   }
 
   .options__container {

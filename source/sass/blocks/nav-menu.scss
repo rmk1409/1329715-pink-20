@@ -1,19 +1,46 @@
 .nav-menu__link {
   display: flex;
-  padding: 25px;
+  padding: 16px;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   color: $white;
+
+  &:hover {
+    color: $light-red;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.nav-menu--opened {
+  display: block;
+  background-color: $dark-blue;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.nav-menu--opened .nav-menu__link {
+  box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 @media (min-width: $desktop-min-width) {
   .nav-menu__link {
     padding: 0;
+
+    &:active {
+      color: white;
+    }
   }
 
   .nav-menu__link--active {
     padding-bottom: 10px;
     border-bottom: 2px solid $white;
+  }
+
+  .nav-menu {
+    display: flex;
+    background-color: transparent;
   }
 }

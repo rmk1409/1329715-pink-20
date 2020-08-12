@@ -10,6 +10,22 @@
   line-height: 18px;
 }
 
+.copyright__link svg {
+  fill: $light-red;
+}
+
+.copyright__link {
+  &:hover {
+    svg {
+      fill: $dark-blue;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $desktop-min-width) {
   .copyright {
     width: 153px;

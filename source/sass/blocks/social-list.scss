@@ -1,7 +1,7 @@
 .social-list {
   display: flex;
   justify-content: space-between;
-  width: 172px;
+  width: 178px;
 }
 
 .social-list__link {
@@ -12,6 +12,18 @@
   align-items: center;
   border: 3px solid rgba($dark-blue, 0.1);
   border-radius: 50%;
+
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.social-list__link svg {
+  fill: $light-red;
 }
 
 @media (min-width: $tablet-min-width) {

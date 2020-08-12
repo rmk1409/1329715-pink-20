@@ -3,6 +3,21 @@
   color: $white;
 }
 
+.container--index-page-intro {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -316px;
+    right: 0;
+    width: 320px;
+    height: 286px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
 .intro--photo-page {
   padding-top: 28px;
   padding-bottom: 78px;
@@ -16,7 +31,6 @@
 .intro__header {
   width: 280px;
   margin: 0;
-  margin-bottom: 24px;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
@@ -26,7 +40,6 @@
 .intro--contest-page .intro__header,
 .intro--photo-page .intro__header {
   line-height: 33px;
-  margin-bottom: 0;
 }
 
 .intro__header br {
@@ -47,36 +60,39 @@
   display: none;
 }
 
-.intro__image {
-  position: relative;
-  bottom: -5px;
-  left: -21px;
-}
-
 .intro__main-form {
   margin-top: 30px;
   padding-bottom: 22px;
 }
 
 @media (min-width: $tablet-min-width) {
+  .intro {
+    padding-top: 95px;
+  }
+
+  .container--index-page-intro {
+    &::after {
+      background-image: none;
+    }
+  }
+
   .intro__header {
-    margin-top: 71px;
-    margin-bottom: 2px;
     margin-left: 10px;
     font-size: 40px;
   }
 
   .intro--contest-page {
+    padding-top: 68px;
     padding-bottom: 60px;
   }
 
   .intro--photo-page {
-    padding-bottom: 127px;
+    padding-top: 67px;
+    padding-bottom: 128px;
   }
 
   .intro--photo-page .intro__header,
   .intro--contest-page .intro__header {
-    margin-top: 40px;
     margin-left: 0;
     width: auto;
     font-size: 50px;
@@ -85,10 +101,6 @@
 
   .intro__header br {
     display: inline;
-  }
-
-  .intro__image {
-    display: none;
   }
 
   .intro__pre-form-header {
@@ -103,25 +115,38 @@
 }
 
 @media (min-width: $desktop-min-width) {
+  .intro {
+    padding-top: 99px;
+  }
+
+  .container--index-page-intro {
+    &::after {
+      right: 42px;
+      bottom: -440px;
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      width: 890px;
+      height: 645px;
+    }
+  }
+
   .intro__header {
-    margin-top: 75px;
-    margin-bottom: 7px;
     font-size: 50px;
     line-height: 68px;
   }
 
   .intro--contest-page {
-    padding-top: 18px;
+    padding-top: 58px;
     padding-bottom: 88px;
   }
 
   .intro--photo-page {
-    padding-top: 18px;
+    padding-top: 59px;
     padding-bottom: 90px;
   }
 
   .intro__pre-form-header {
     width: 756px;
+    margin-top: 93px;
   }
 
   .intro__main-form {

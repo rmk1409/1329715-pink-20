@@ -3,20 +3,4 @@
   justify-content: space-around;
   align-items: flex-end;
   width: 240px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width: $tablet-min-width) {
-  .store-list {
-    margin-left: 28px;
-    margin-right: 0;
-    margin-bottom: 29px;
-  }
-}
-
-@media (min-width: $desktop-min-width) {
-  .store-list {
-    margin-bottom: 47px;
-  }
 }
