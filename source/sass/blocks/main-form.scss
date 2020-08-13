@@ -30,6 +30,21 @@
   line-height: 30px;
   color: $dark-blue;
   border: 2px solid $grey2;
+
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $light-red;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $dark-blue;
+    opacity: 1;
+  }
 }
 
 .main-form__emotion-label {
@@ -66,6 +81,18 @@
   color: $white;
   text-transform: uppercase;
   border-radius: 1px;
+
+  &:hover {
+    background-color: $green2;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $grey2;
+  }
 }
 
 .main-form__hint {
@@ -76,14 +103,22 @@
   text-transform: uppercase;
   text-align: center;
   color: $dark-blue;
+}
 
-  & span {
-    color: $light-red;
-  }
+.main-form__hint .main-form__star {
+  color: $light-red;
+}
+
+.main-form__hint .main-form__extra-text {
+  display: none;
 }
 
 .main-form__travel-fieldset {
   margin-top: 30px;
+}
+
+.main-form__contacts-fieldset .main-form__header {
+  display: none;
 }
 
 .main-form__inner-container {
@@ -102,7 +137,7 @@
 
   .main-form__outer-container {
     width: 660px;
-    margin: 64px auto 0;
+    margin: 64px auto 53px;
     padding: 0 20px;
   }
 
@@ -128,17 +163,23 @@
   }
 
   .main-form__emotion-div {
-    margin-top: 79px;
+    margin-top: 65px;
     min-height: 289px;
+    padding: 36px 57px 46px;
   }
 
   .main-form__travel-fieldset {
-    margin-top: 0;
+    margin-top: 66px;
+    padding: 57px 57px 53px;
     background-color: $white;
   }
 
+  .main-form__travel-fieldset .main-form__header {
+    width: 440px;
+  }
+
   .main-form__emotion-text-area {
-    width: 496px;
+    width: 500px;
     min-height: 193px;
   }
 
@@ -149,15 +190,70 @@
   .main-form__submit-button-and-hint {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 23px;
   }
 
   .main-form__platform-type-fieldset {
     grid-row: 2;
+    margin-top: 21px;
+    padding: 57px 57px 16px;
+  }
+
+  .main-form__platform-type-fieldset,
+  .main-form__travel-fieldset,
+  .main-form__contacts-fieldset,
+  .main-form__emotion-div {
+    position: relative;
+    border: 2px solid $grey2;
+    border-radius: 1px;
   }
 
   .main-form__contacts-fieldset {
     grid-row: 3;
-    margin-top: 98px;
+    margin-top: 67px;
+    padding: 38px 58px 58px;
+  }
+
+  .main-form__contacts-fieldset .main-form__inner-container {
+    display: grid;
+  }
+
+  .main-form__contacts-fieldset .main-form__header {
+    display: block;
+    width: 260px;
+    margin-bottom: 0;
+  }
+
+  .main-form__contacts-fieldset .main-form__input-text {
+    margin-top: 28px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-right: 60px;
+  }
+
+  .main-form__header,
+  .main-form__emotion-label {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 370px;
+    background-color: $white;
+    transform: translateX(-50%);
+  }
+
+  .main-form__emotion-label {
+    top: -15px;
+    width: 260px;
+  }
+
+  .platform-type-fieldset .main-form__label-for-check-or-radio {
+    margin-bottom: 44px;
+    padding-left: 62px;
+  }
+
+  .main-form__hint {
+    margin-top: 47px;
   }
 }
 
@@ -165,18 +261,27 @@
   .main-form {
     grid-template-columns: 433px 431px;
     grid-auto-rows: min-content;
-    gap: 60px 74px;
+    gap: 20px 74px;
   }
 
   .main-form__outer-container {
     width: 960px;
     margin-top: 79px;
+    margin-bottom: 4px;
     padding: 0 10px;
   }
 
   .main-form__platform-type-fieldset {
     grid-row: 1;
     grid-column: 2;
+    margin-top: 0;
+    padding-left: 70px;
+    padding-bottom: 62px;
+    height: fit-content;
+  }
+
+  .platform-type-fieldset .main-form__label-for-check-or-radio:last-child {
+    margin-bottom: 0;
   }
 
   .main-form__contacts-fieldset {
@@ -189,19 +294,48 @@
   .main-form__travel-fieldset {
     grid-row: 3;
     grid-column: 1/-1;
+    margin-top: 46px;
+    padding-top: 55px;
+    padding-bottom: 2px;
 
     .main-form__inner-container {
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
+      column-gap: 57px;
+      height: 170px;
     }
+  }
+
+  .main-form__contacts-fieldset .main-form__inner-container {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 70px;
   }
 
   .main-form__emotion-div {
     grid-column: 1/-1;
+    margin-top: 44px;
+    min-height: fit-content;
+    padding-bottom: 40px;
   }
 
   .main-form__emotion-text-area {
-    width: 816px;
+    width: 822px;
     min-height: 124px;
+    padding-top: 11px;
+    padding-left: 22px;
+  }
+
+  .main-form__submit-button-and-hint {
+    grid-column: 1/-1;
+    margin-top: 4px;
+  }
+
+  .main-form__hint {
+    margin-top: 43px;
+  }
+
+  .main-form__hint .main-form__extra-text {
+    display: inline;
   }
 }

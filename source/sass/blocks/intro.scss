@@ -123,9 +123,10 @@
     &::after {
       right: 42px;
       bottom: -440px;
-      background-image: url("../img/iphone-hand-desktop@1x.png");
-      width: 890px;
+      width: 590px;
       height: 645px;
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      background-position-x: -300px;
     }
   }
 

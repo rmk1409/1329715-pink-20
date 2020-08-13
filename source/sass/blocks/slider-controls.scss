@@ -5,6 +5,14 @@
   background-color: rgba($dark-blue, 0.3);
   border-radius: 50%;
 
+  &:hover {
+    background-color: rgba($dark-blue, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($dark-blue, 0.1);
+  }
+
   &--active {
     position: relative;
 
