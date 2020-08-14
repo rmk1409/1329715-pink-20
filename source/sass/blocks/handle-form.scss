@@ -216,6 +216,7 @@
   .handle-form__buttons-div {
     grid-column: 2;
     margin-top: 27px;
+    margin-left: 14px;
 
     &::before {
       display: none;
@@ -255,10 +256,7 @@
 
   .handle-form__cancel-button,
   .handle-form__submit-button {
-    position: relative;
-    left: 50%;
     width: 260px;
-    transform: translateX(-50%);
   }
 }
 
@@ -287,8 +285,6 @@
 
   .handle-form__submit-button,
   .handle-form__cancel-button {
-    left: auto;
-    transform: none;
     width: 183px;
   }
 
