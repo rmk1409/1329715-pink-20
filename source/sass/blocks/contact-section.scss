@@ -48,17 +48,14 @@
 
 .contact-section__map {
   position: relative;
-  padding-top: 34px;
+  margin-top: 34px;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-image: url("../img/bg-triangle-white-footer.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
+.contact-section__decor-triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .contact-section__img {
@@ -100,7 +97,7 @@
   }
 
   .contact-section__map {
-    padding-top: 22px;
+    margin-top: 22px;
   }
 
   .contact-section__img {
@@ -114,7 +111,7 @@
   }
 
   .contact-section__map {
-    padding-top: 19px;
+    margin-top: 19px;
   }
 
   .contact-section__header {
