@@ -78,8 +78,11 @@
       </div>
     </fieldset>
     <fieldset class="main-form__travel-fieldset travel-fieldset reset-fieldset">
+      <legend class="main-form__legend">
+        Ваши безбашенные<br>
+        достижения в путешествии
+      </legend>
       <div class="main-form__inner-container">
-        <h3 class="main-form__header">Ваши безбашенные достижения в путешествии</h3>
         <label class="main-form__label-for-check-or-radio check">
           <input class="check__input" type="checkbox" name="shark" checked>
           <span class="check__box"></span>
@@ -113,8 +116,10 @@
       </div>
     </fieldset>
     <fieldset class="main-form__contacts-fieldset contacts-fieldset reset-fieldset">
+      <legend class="main-form__legend">
+        Контактная информация
+      </legend>
       <div class="main-form__inner-container">
-        <h3 class="main-form__header">Контактная информация</h3>
         <label class="main-form__label-for-input-text contacts-fieldset__phone-number-label" for="phone-number-input">
           Номер телефона
         </label>
@@ -133,8 +138,11 @@
       </div>
     </fieldset>
     <fieldset class="main-form__platform-type-fieldset platform-type-fieldset reset-fieldset">
+      <legend class="main-form__legend">
+        С каким приложением<br>
+        путешествовали?
+      </legend>
       <div class="main-form__inner-container">
-        <h3 class="main-form__header">С каким приложением путешествовали?</h3>
         <label class="main-form__label-for-check-or-radio check">
           <input class="check__input" type="radio" name="platform" value="ios" checked>
           <span class="check__radio"></span>
@@ -152,14 +160,14 @@
         </label>
       </div>
     </fieldset>
-    <div class="main-form__emotion-div main-form__inner-container">
-      <label class="main-form__label-for-input-text main-form__emotion-label" for="message-textarea">
+    <fieldset class="main-form__emotion-fieldset main-form__inner-container reset-fieldset">
+      <legend class="main-form__legend">
         Опишите свои эмоции
-      </label>
+      </legend>
       <textarea
-        class="main-form__input-text main-form__emotion-text-area" id="message-textarea" name="message"
+        class="main-form__input-text main-form__emotion-text-area" name="message"
         placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-    </div>
+    </fieldset>
     <div class="main-form__submit-button-and-hint main-form__inner-container">
       <button class="main-form__submit-button button" type="submit">Отправить форму</button>
       <p class="main-form__hint"><span class="main-form__star">*</span> &#9473; Обязательные <span

@@ -5,8 +5,7 @@
 
 @media (min-width: $tablet-min-width) {
   .contacts-fieldset {
-    padding-top: 15px;
-    min-height: 306px;
+    padding-top: 8px;
   }
 
 
@@ -51,6 +50,7 @@
 
 @media (min-width: $desktop-min-width) {
   .contacts-fieldset {
+    padding-top: 4px;
     padding-bottom: 13px;
     min-height: fit-content;
   }
