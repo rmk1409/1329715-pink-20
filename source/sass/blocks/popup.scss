@@ -1,0 +1,112 @@
+.popup {
+  display: none;
+  position: relative;
+  left: 50%;
+  width: 320px;
+  min-height: 298px;
+  padding-top: 47px;
+  text-align: center;
+  background-color: $white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+  transform: translateX(-50%);
+}
+
+.popup__header {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.popup__message {
+  margin: 25px 0 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-blue;
+}
+
+.popup__button {
+  margin-top: 41px;
+  padding: 10px 20px;
+  width: 279px;
+  min-height: 61px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $white;
+  background: $dark-green;
+  border: 2px solid $dark-green;
+  border-radius: 1px;
+
+  &:hover {
+    background-color: $green2;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+}
+
+@media (min-width: $tablet-min-width) {
+  .popup {
+    width: 460px;
+    min-height: 372px;
+    border-radius: 5px;
+  }
+
+  .popup__header,
+  .popup__message {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .popup__header {
+    width: 250px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popup__message {
+    width: 320px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .popup__button {
+    margin-top: 32px;
+    width: 296px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .popup {
+    width: 780px;
+    min-height: 377px;
+  }
+
+  .popup__header {
+    width: 350px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popup__message {
+    width: 350px;
+    margin-bottom: 61px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .popup__bottom-row {
+    background-color: $grey;
+    padding-top: 51px;
+    padding-bottom: 51px;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .popup__button {
+    margin-top: 0;
+  }
+}

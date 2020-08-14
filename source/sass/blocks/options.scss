@@ -1,7 +1,10 @@
 .options {
   padding: 140px 0 49px;
-  background-color: $grey;
   overflow: hidden;
+  background-color: $grey;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 245%;
 }
 
 .options__container {
@@ -124,6 +127,7 @@
   .options {
     padding-top: 115px;
     padding-bottom: 69px;
+    background-size: 125%;
   }
 
   .options__container {
@@ -194,8 +198,10 @@
 
 @media (min-width: $desktop-min-width) {
   .options {
+    margin-top: 40px;
     padding-top: 148px;
     padding-bottom: 96px;
+    background-size: 103%;
   }
 
   .options__name-and-price-header--hit {

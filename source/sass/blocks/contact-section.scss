@@ -32,10 +32,30 @@
   line-height: 33px;
   color: $light-red;
   text-decoration: none;
+
+  &[href^="mailto"] {
+    &:hover {
+      text-decoration-line: underline;
+      color: $dark-blue;
+    }
+
+    &:active {
+      text-decoration: none;
+      opacity: 0.3;
+    }
+  }
 }
 
 .contact-section__map {
-  padding-top: 34px;
+  position: relative;
+  margin-top: 34px;
+}
+
+.contact-section__decor-triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .contact-section__img {
@@ -77,7 +97,7 @@
   }
 
   .contact-section__map {
-    padding-top: 22px;
+    margin-top: 22px;
   }
 
   .contact-section__img {
@@ -91,7 +111,7 @@
   }
 
   .contact-section__map {
-    padding-top: 19px;
+    margin-top: 19px;
   }
 
   .contact-section__header {
