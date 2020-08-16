@@ -1,6 +1,6 @@
 .main-footer__logo {
   &:hover {
-    .main-footer__logo-letter {
+    & svg {
       fill: $light-red;
     }
   }
@@ -8,10 +8,14 @@
   &:active {
     opacity: 0.3;
 
-    .main-footer__logo-letter {
+    & svg {
       fill: $dark-blue;
     }
   }
+}
+
+.main-footer__desktop-logo {
+  display: none;
 }
 
 .main-footer .container {
@@ -39,6 +43,14 @@
 }
 
 @media (min-width: $desktop-min-width) {
+  .main-footer__mobile-tablet-logo {
+    display: none;
+  }
+
+  .main-footer__desktop-logo {
+    display: block;
+  }
+
   .main-footer .container {
     min-height: 197px;
     padding-top: 63px;

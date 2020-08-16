@@ -66,17 +66,30 @@
       height: 382px;
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
       background-repeat: no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-screen-1-desktop@2x.png");
+        background-size: 292px auto;
+      }
     }
   }
 
   .advantages-list__change-the-world-li::before {
     left: 7px;
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+    }
   }
 
   .advantages-list__find-new-friends-li::before {
     left: 10px;
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+    }
   }
 
   .advantages-list__header {

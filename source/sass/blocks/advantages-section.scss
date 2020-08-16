@@ -20,6 +20,11 @@
     height: 320px;
     background-image: url("../img/iphone-screen-mobile@1x.png");
     transform: translateX(-50%);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-screen-mobile@2x.png");
+      background-size: 157px auto;
+    }
   }
 }
 
@@ -47,6 +52,11 @@
       height: 547px;
       background-image: url("../img/iphone-screen-3-tablet@1x.png");
       background-repeat: no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-screen-3-tablet@2x.png");
+        background-size: 268px auto;
+      }
     }
   }
 }
