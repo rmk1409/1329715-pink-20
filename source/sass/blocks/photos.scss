@@ -15,10 +15,29 @@
   padding-top: 50px;
 }
 
-.photos__first-photo-and-comment-section .photos__link {
-  width: 320px;
-  left: 50%;
-  transform: translateX(-50%);
+.photos__first-photo-and-comment-section img {
+  width: 100%;
+}
+
+.photos__link--panorama .container {
+  position: relative;
+}
+
+.photos__panorama-span {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 36px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  color: $white;
+  background-color: $light-red;
+  text-transform: uppercase;
 }
 
 .photos__review-list {
@@ -81,30 +100,7 @@
 
 .photos__link {
   display: block;
-  text-align: center;
   line-height: 0;
-
-  &--panorama {
-    position: relative;
-
-    &::after {
-      position: absolute;
-      content: "Панорама дня";
-      right: 20px;
-      top: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 140px;
-      height: 36px;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 24px;
-      text-transform: uppercase;
-      color: $white;
-      background-color: $light-red;
-    }
-  }
 }
 
 .photos__photo-fair {
@@ -117,16 +113,26 @@
     padding-top: 92px;
   }
 
-  .photos__first-photo-and-comment-section .photos__link {
-    width: 660px;
-    min-height: 509px;
+  .photos__review-list img {
+    width: 300px;
+    height: 300px;
+  }
 
-    &--panorama {
-      &::after {
-        top: 57px;
-        font-style: normal;
-      }
+  .photos__link--panorama {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & img {
+      min-width: 700px;
+      height: 509px;
     }
+  }
+
+  .photos__panorama-span {
+    top: 57px;
+    font-style: normal;
   }
 
   .photos__header {
@@ -193,10 +199,6 @@
     display: flex;
     flex-direction: column;
   }
-
-  .photos__review-list .photos__link {
-    min-height: 300px;
-  }
 }
 
 @media (min-width: $desktop-min-width) {
@@ -214,36 +216,34 @@
     grid-template-columns: repeat(3, 300px);
   }
 
+  .photos__review-list img {
+    height: 400px;
+  }
+
   .photos__header {
     width: 610px;
   }
 
   .photos__first-photo-and-comment-section {
     padding-top: 88px;
-    overflow: hidden;
   }
 
-  .photos__first-photo-and-comment-section .photos__link {
-    width: 1200px;
-    min-height: 506px;
-
-    &--panorama {
-      &::after {
-        top: 54px;
-        right: 130px;
-        font-style: normal;
-      }
+  .photos__link--panorama {
+    & img {
+      min-width: 1200px;
+      height: 506px;
     }
+  }
+
+  .photos__panorama-span {
+    top: 54px;
+    right: 10px;
   }
 
   .photos__first-photo-and-comment-section .photos__block {
     width: auto;
     padding-top: 24px;
     padding-bottom: 24px;
-  }
-
-  .photos__review-list .photos__link {
-    min-height: 400px;
   }
 
   .photos__like {
@@ -254,5 +254,17 @@
 
   .photos__like--top {
     padding-right: 33px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: $desktop-min-width - 1px) {
+  .photos__link--panorama picture {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photos__link--panorama picture {
+    width: 100%;
   }
 }
