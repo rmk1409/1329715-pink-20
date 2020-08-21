@@ -7,6 +7,9 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
+const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
 
 // Styles
 
@@ -42,6 +45,36 @@ const server = (done) => {
 }
 
 exports.server = server;
+
+// Image Optimization
+const images = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 2}),
+      imagemin.mozjpeg({progressive: true}),
+      imagemin.svgo()
+    ]))
+}
+
+exports.images = images;
+
+// Making WebP
+const makewebp = () => {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp())
+    .pipe(gulp.dest("source/img"))
+}
+exports.makewebp = makewebp;
+
+// Making svg-sprite
+const sprite = () => {
+  return gulp.src("source/img/**/*.svg")
+    .pipe(svgstore())
+    .pipe(rename("svg-sprite.svg"))
+    .pipe(gulp.dest("source/img"))
+}
+
+exports.sprite = sprite;
 
 // Watcher
 
