@@ -93,6 +93,10 @@
     width: 250px;
   }
 
+  .contact-section__contact-list li:first-child {
+    margin-right: 20px;
+  }
+
   .contact-section__contact-list li:last-child {
     margin-top: 23px;
   }
@@ -123,6 +127,13 @@
 
   .contact-section__contact-list {
     margin-top: 21px;
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: space-between;
+  }
+
+  .contact-section__contact-list li:first-child {
+    margin-right: 0;
   }
 
   .contact-section__contact-list li:nth-child(2) {
