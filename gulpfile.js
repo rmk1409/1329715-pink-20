@@ -12,6 +12,7 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const htmlmin = require('gulp-htmlmin');
+const jsminify = require('gulp-minify');
 
 // Styles
 
@@ -84,7 +85,6 @@ const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
     "source/*.ico"
   ], {
     base: "source"
@@ -100,11 +100,19 @@ const html = () => {
   ], {
     base: "source"
   })
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 
 };
 exports.html = html;
+
+// Minify js & moved it to 'build'
+const js = () => {
+  return gulp.src([
+    "source/js/**"])
+    .pipe(jsminify())
+    .pipe(gulp.dest('build/js'));
+}
 
 // Delete 'build'
 const clean = () => {
@@ -112,7 +120,7 @@ const clean = () => {
 };
 exports.clean = clean;
 
-const build = gulp.series(clean, copy, html, styles, images, makewebp, sprite);
+const build = gulp.series(clean, copy, html, js, styles, images, makewebp, sprite);
 exports.build = build;
 
 // Watcher
