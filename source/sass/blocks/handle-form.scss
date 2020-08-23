@@ -328,8 +328,11 @@
   }
 
   .handle-form__handler-crop::after,
-  .handle-form__handler-fill::after,
-  .handle-form__handler-contrast::after {
+  .handle-form__handler-fill::after {
     width: 410px;
+  }
+
+  .handle-form__handler-contrast::after {
+    display: none;
   }
 }
