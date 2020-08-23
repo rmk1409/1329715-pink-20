@@ -100,7 +100,7 @@ const html = () => {
   ], {
     base: "source"
   })
-    .pipe(htmlmin())
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 
 };
