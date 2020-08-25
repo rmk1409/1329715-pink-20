@@ -249,10 +249,10 @@
     width: auto;
     padding: 0 25px;
     background-color: $white;
+  }
 
-    & br {
-      display: none;
-    }
+  .main-form__legend br {
+    display: none;
   }
 
   .main-form__emotion-label {

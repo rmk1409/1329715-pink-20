@@ -13,7 +13,7 @@
   <link rel="preload" href="fonts/opensanslight.woff" as="font">
 </head>
 <body>
-<header class="main-header">
+<header class="main-header main-header--opened">
   <nav class="main-header__nav">
     <div class="main-header__container">
       <a class="main-header__logo" href="index.html">
@@ -28,7 +28,8 @@
         </svg>
       </a>
       <div class="main-header__menu-with-toggle-button">
-        <button class="main-header__button-toggle button" type="button" aria-label="Открыть / закрыть меню"></button>
+        <button class="main-header__button-toggle button main-header__button-toggle--hidden" type="button"
+                aria-label="Открыть / закрыть меню"></button>
         <ul class="main-header__nav-menu nav-menu reset-list">
           <li>
             <a class="nav-menu__link" href="index.html">Главная</a>
@@ -81,14 +82,11 @@
         </picture>
       </a>
       <div class="container">
-        <blockquote class="photos__block">
-          <div class="photos__author-and-upper-like">
-            <cite class="photos__author">
-              Анна
-              <span class="photos__time">(5 минут назад)</span>
-            </cite>
-            <p class="photos__like photos__like--top">нравится: 215</p>
-          </div>
+        <blockquote class="photos__block photos__block--first">
+          <cite class="photos__author">
+            Анна
+            <span class="photos__time">(5 минут назад)</span>
+          </cite>
           <p class="photos__comment photos__comment-first-comment">
             Прыгать или нет? Напишите в комментарии свой совет и&#32;<br>
             смотрите прямую трансляцию в перископе, задавайте свои вопросы!
@@ -102,12 +100,13 @@
         <a class="photos__link" href="#">
           <picture>
             <source type="image/webp" media="(min-width: 960px)"
-                    srcset="img/photo-car-desktop@1x.webp, img/photo-car-desktop@2x.webp">
+                    srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 660px)"
-                    srcset="img/photo-car-tablet@1x.webp, img/photo-car-tablet@2x.webp">
+                    srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg">
-            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg">
+            <source media="(min-width: 960px)"
+                    srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
             <img
               src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="фотка" width="280"
               height="180">
@@ -133,9 +132,9 @@
                     srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
             <source media="(min-width: 960px)"
-                    srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg">
+                    srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)"
-                    srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg">
+                    srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
             <img
               src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="фотка" width="280"
               height="180">
@@ -161,8 +160,9 @@
                     srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
             <source media="(min-width: 960px)"
-                    srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg">
-            <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg">
+                    srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+                    srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
             <img
               src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="фотка" width="280"
               height="180">
@@ -187,8 +187,10 @@
             <source type="image/webp" media="(min-width: 660px)"
                     srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg">
-            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg">
+            <source media="(min-width: 960px)"
+                    srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+                    srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
             <img
               src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="фотка" width="280"
               height="180">
@@ -213,8 +215,9 @@
             <source type="image/webp" media="(min-width: 660px)"
                     srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg">
-            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg">
+            <source media="(min-width: 960px)"
+                    srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
             <img
               src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="фотка" width="280"
               height="180">
@@ -239,8 +242,10 @@
             <source type="image/webp" media="(min-width: 660px)"
                     srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg">
-            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg">
+            <source media="(min-width: 960px)"
+                    srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+                    srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
             <img
               src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="фотка" width="280"
               height="180">
@@ -275,8 +280,10 @@
             <source type="image/webp" media="(min-width: 660px)"
                     srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg">
-            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg">
+            <source media="(min-width: 960px)"
+                    srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+                    srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
             <img
               class="handle-form__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
               alt="фотка" width="280" height="374">
@@ -290,8 +297,8 @@
                   </svg>
                 </button>
                 <div class="handle-form__scale-and-toggle">
-                  <div class="handler-crop__scale handler__scale"></div>
-                  <div class="handler-crop__toggle handler__toggle"></div>
+                  <div class="handler-crop__scale handle-form__scale"></div>
+                  <div class="handler-crop__toggle handle-form__toggle"></div>
                 </div>
               </div>
             </fieldset>
@@ -303,8 +310,8 @@
                   </svg>
                 </button>
                 <div class="handle-form__scale-and-toggle">
-                  <div class="handler-fill__scale handler__scale"></div>
-                  <div class="handler-fill__toggle handler__toggle"></div>
+                  <div class="handler-fill__scale handle-form__scale"></div>
+                  <div class="handler-fill__toggle handle-form__toggle"></div>
                 </div>
               </div>
             </fieldset>
@@ -316,15 +323,15 @@
                   </svg>
                 </button>
                 <div class="handle-form__scale-and-toggle">
-                  <div class="handler-contrast__scale handler__scale"></div>
-                  <div class="handler-contrast__toggle handler__toggle"></div>
+                  <div class="handler-contrast__scale handle-form__scale"></div>
+                  <div class="handler-contrast__toggle handle-form__toggle"></div>
                 </div>
               </div>
             </fieldset>
           </div>
           <div class="handle-form__scale-and-toggle-div-for-mobile">
-            <div class="handler-crop__scale handler__scale handler__scale-for-mobile"></div>
-            <div class="handler-crop__toggle handler__toggle handler__toggle-for-mobile"></div>
+            <div class="handle-form__scale handle-form__scale-for-mobile"></div>
+            <div class="handle-form__toggle handle-form__toggle-for-mobile"></div>
           </div>
           <div class="handle-form__buttons-div">
             <button class="handle-form__submit-button button" type="submit">Запостить</button>

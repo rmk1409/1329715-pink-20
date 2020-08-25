@@ -13,7 +13,7 @@
   <link rel="preload" href="fonts/opensanslight.woff" as="font">
 </head>
 <body>
-<header class="main-header main-header--index-page">
+<header class="main-header main-header--index-page main-header--opened">
   <nav class="main-header__nav">
     <div class="main-header__container">
       <a class="main-header__logo">
@@ -28,7 +28,7 @@
         </svg>
       </a>
       <div class="main-header__menu-with-toggle-button">
-        <button class="main-header__button-toggle button" type="button" aria-label="Открыть / закрыть меню"></button>
+        <button class="main-header__button-toggle button main-header__button-toggle--hidden" type="button" aria-label="Открыть / закрыть меню"></button>
         <ul class="main-header__nav-menu nav-menu reset-list">
           <li>
             <a class="nav-menu__link nav-menu__link--active">Главная</a>
@@ -175,15 +175,15 @@
         <tr>
           <th class="options__name-and-price-header options__element-display-none"></th>
           <th class="options__name-and-price-header">
-            <h3 class="options__option-name">База</h3>
+            <p class="options__option-name">База</p>
             <p class="options__option-price">1,99 usd</p>
           </th>
           <th class="options__name-and-price-header options__name-and-price-header--hit">
-            <h3 class="options__option-name">Стандарт</h3>
+            <p class="options__option-name">Стандарт</p>
             <p class="options__option-price">3,99 usd</p>
           </th>
           <th class="options__name-and-price-header">
-            <h3 class="options__option-name">Анлим</h3>
+            <p class="options__option-name">Анлим</p>
             <p class="options__option-price">9,99 usd</p>
           </th>
         </tr>
@@ -258,7 +258,7 @@
       </ul>
     </div>
     <div class="contact-section__map">
-      <svg class="contact-section__decor-triangle" viewBox="0 0 595.28 61.905">
+      <svg class="contact-section__decor-triangle" viewBox="0 0 595.28 61.905" width="320" height="33">
         <use xlink:href="img/svg-sprite.svg#bg-triangle-white-footer"></use>
       </svg>
       <iframe

@@ -51,29 +51,6 @@
   line-height: 33px;
 }
 
-//.intro__header br {
-//  display: none;
-//}
-
-.intro__pre-form-header {
-  margin-top: 44px;
-  margin-bottom: 0;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  color: $dark-blue;
-  text-align: center;
-}
-
-.intro__pre-form-header span {
-  display: none;
-}
-
-.intro__main-form {
-  margin-top: 30px;
-  padding-bottom: 22px;
-}
-
 @media (min-width: $tablet-min-width) {
   .intro {
     padding-top: 95px;
@@ -111,20 +88,6 @@
     width: auto;
     font-size: 50px;
     line-height: 68px;
-  }
-
-  //.intro__header br {
-  //  display: inline;
-  //}
-
-  .intro__pre-form-header {
-    margin: 91px auto 0;
-    width: 490px;
-    font-size: 18px;
-  }
-
-  .intro__pre-form-header span {
-    display: inline;
   }
 }
 
@@ -168,14 +131,5 @@
   .intro--photo-page {
     padding-top: 59px;
     padding-bottom: 90px;
-  }
-
-  .intro__pre-form-header {
-    width: 756px;
-    margin-top: 93px;
-  }
-
-  .intro__main-form {
-    margin-top: 10px;
   }
 }

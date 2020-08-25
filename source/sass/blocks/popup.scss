@@ -1,7 +1,8 @@
 .popup {
   display: none;
-  position: relative;
+  position: fixed;
   left: 50%;
+  top: 50%;
   width: 320px;
   min-height: 298px;
   padding-top: 47px;
@@ -9,7 +10,7 @@
   background-color: $white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 1px;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .popup__header {
@@ -19,10 +20,17 @@
 }
 
 .popup__message {
-  margin: 25px 0 0;
+  margin: 25px auto 0;
+  width: 273px;
   font-size: 14px;
   line-height: 24px;
   color: $dark-blue;
+}
+
+.success .popup__bottom-row {
+  margin-top: 35px;
+  padding: 51px 0;
+  background-color: $grey;
 }
 
 .popup__button {
@@ -48,6 +56,10 @@
   }
 }
 
+.success .popup__button {
+  margin-top: 0;
+}
+
 @media (min-width: $tablet-min-width) {
   .popup {
     width: 460px;
@@ -57,9 +69,12 @@
 
   .popup__header,
   .popup__message {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .popup__message br {
+    display: none;
   }
 
   .popup__header {
@@ -72,6 +87,10 @@
     width: 320px;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .success .popup__bottom-row {
+    margin-top: 30px;
   }
 
   .popup__button {
@@ -87,26 +106,35 @@
   }
 
   .popup__header {
-    width: 350px;
+    width: 400px;
     font-size: 30px;
     line-height: 40px;
   }
 
   .popup__message {
-    width: 350px;
-    margin-bottom: 61px;
+    width: 380px;
+    margin-bottom: 0;
     font-size: 18px;
     line-height: 24px;
   }
 
   .popup__bottom-row {
-    background-color: $grey;
+    margin-top: 61px;
     padding-top: 51px;
     padding-bottom: 51px;
+    background-color: $grey;
     border-radius: 0 0 5px 5px;
+  }
+
+  .success .popup__bottom-row {
+    margin-top: 38px;
   }
 
   .popup__button {
     margin-top: 0;
+  }
+
+  .success .popup__button {
+    width: 456px;
   }
 }

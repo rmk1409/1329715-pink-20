@@ -37,7 +37,7 @@
   margin-left: 29px;
 }
 
-.handler__scale {
+.handle-form__scale {
   display: none;
   height: 2px;
   width: 240px;
@@ -53,7 +53,7 @@
   position: relative;
 }
 
-.handler__toggle {
+.handle-form__toggle {
   position: absolute;
   top: -5px;
   left: 5px;
@@ -69,7 +69,7 @@
   }
 }
 
-.handler__scale-for-mobile {
+.handle-form__scale-for-mobile {
   display: block;
   margin: 0 auto;
 }
@@ -141,7 +141,7 @@
   display: none;
 }
 
-.handler__toggle-for-mobile {
+.handle-form__toggle-for-mobile {
   display: block;
   left: 213px;
 }
@@ -173,7 +173,7 @@
     display: none;
   }
 
-  .handler__scale {
+  .handle-form__scale {
     display: block;
     width: 202px;
     margin-left: 20px;
@@ -296,7 +296,7 @@
     margin-left: 43px;
   }
 
-  .handler__scale {
+  .handle-form__scale {
     width: 288px;
     margin-left: 50px;
   }

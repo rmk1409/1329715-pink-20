@@ -112,7 +112,8 @@ const js = () => {
     "source/js/**"])
     .pipe(jsminify())
     .pipe(gulp.dest('build/js'));
-}
+};
+exports.js = js;
 
 // Delete 'build'
 const clean = () => {
