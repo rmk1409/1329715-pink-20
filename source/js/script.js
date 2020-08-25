@@ -1,11 +1,9 @@
-let menuButton = document.querySelector(".main-header__button-toggle");
-let menu = document.querySelector(".main-header__nav-menu");
-let nav = document.querySelector(".main-header__nav");
 let mainHeader = document.querySelector(".main-header");
+let menuButton = document.querySelector(".main-header__button-toggle");
+
+mainHeader.classList.toggle("main-header--opened");
+menuButton.classList.toggle("main-header__button-toggle--hidden");
 
 menuButton.addEventListener("click", function () {
-  menuButton.classList.toggle("main-header__button-toggle--opened");
-  menu.classList.toggle("nav-menu--opened");
-  nav.classList.toggle("main-header__nav--full");
-  mainHeader.classList.toggle("main-header--index-page-opened")
+  mainHeader.classList.toggle("main-header--opened");
 });
