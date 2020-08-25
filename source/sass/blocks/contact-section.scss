@@ -50,7 +50,7 @@
   position: relative;
   margin-top: 34px;
   min-height: 200px;
-  background-image: url("../img/bg-map-mobile@1x.png");
+  background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -115,7 +115,7 @@
   .contact-section__map {
     margin-top: 22px;
     min-height: 374px;
-    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");
   }
 
   .contact-section__img {
@@ -131,7 +131,7 @@
   .contact-section__map {
     margin-top: 19px;
     min-height: 502px;
-    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@1x.jpg");
   }
 
   .contact-section__header {
