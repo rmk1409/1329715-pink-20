@@ -11,8 +11,8 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
-const htmlmin = require('gulp-htmlmin');
-const jsminify = require('gulp-minify');
+const htmlmin = require("gulp-htmlmin");
+const jsminify = require("gulp-minify");
 
 // Styles
 
@@ -38,7 +38,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -111,7 +111,7 @@ const js = () => {
   return gulp.src([
     "source/js/**"])
     .pipe(jsminify())
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest("build/js"));
 };
 exports.js = js;
 
