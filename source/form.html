@@ -53,128 +53,130 @@
   </section>
 </header>
 <main>
-  <div class="container">
-    <h3 class="intro__pre-form-header">
-      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-      <span>Пожалуйста, заполните форму ниже:</span>
-    </h3>
-  </div>
-  <form method="post" action="#" class="intro__main-form main-form main-form__outer-container">
-    <fieldset class="main-form__name-fieldset name-fieldset reset-fieldset main-form__inner-container">
-      <div class="main-form__label-and-input-div">
-        <label class="main-form__label-for-input-text" for="family-name-input">Фамилия:</label>
-        <input
-          class="main-form__input-text" id="family-name-input" type="text" placeholder="Укажите фамилию *"
-          name="family-name">
-      </div>
-      <div class="main-form__label-and-input-div">
-        <label class="main-form__label-for-input-text" for="name-input">Имя:</label>
-        <input class="main-form__input-text" id="name-input" type="text" placeholder="Введите ваше имя *" name="name">
-      </div>
-      <div class="main-form__label-and-input-div">
-        <label class="main-form__label-for-input-text" for="father-name-input">Отчество:</label>
-        <input
-          class="main-form__input-text" id="father-name-input" type="text" placeholder="Ну и отчество тоже"
-          name="father-name">
-      </div>
-    </fieldset>
-    <fieldset class="main-form__travel-fieldset travel-fieldset reset-fieldset">
-      <legend class="main-form__legend">
-        Ваши безбашенные&#32;<br>
-        достижения в путешествии
-      </legend>
-      <div class="main-form__inner-container">
-        <label class="main-form__label-for-check-or-radio check">
-          <input class="check__input" type="checkbox" name="shark" checked>
-          <span class="check__box"></span>
-          Сделал селфи с акулой
-        </label>
-        <label class="main-form__label-for-check-or-radio check">
-          <input class="check__input" type="checkbox" name="beach" checked>
-          <span class="check__box"></span>
-          Обгорел на пляже
-        </label>
-        <label class="main-form__label-for-check-or-radio check">
-          <input class="check__input" type="checkbox" name="shack-noris">
-          <span class="check__box"></span>
-          Видел Чака Норриса
-        </label>
-        <label class="main-form__label-for-check-or-radio check">
-          <input class="check__input" type="checkbox" name="souvenirs">
-          <span class="check__box"></span>
-          Накупил сувениров
-        </label>
-        <label class="main-form__label-for-check-or-radio check">
-          <input class="check__input" type="checkbox" name="tower" checked>
-          <span class="check__box"></span>
-          Удержал башню
-        </label>
-        <label class="main-form__label-for-check-or-radio check">
-          <input class="check__input" type="checkbox" name="destroyed-hotel">
-          <span class="check__box"></span>
-          Разгромил отель
-        </label>
-      </div>
-    </fieldset>
-    <fieldset class="main-form__contacts-fieldset contacts-fieldset reset-fieldset">
-      <legend class="main-form__legend">
-        Контактная информация
-      </legend>
-      <div class="main-form__inner-container">
-        <label class="main-form__label-for-input-text contacts-fieldset__phone-number-label" for="phone-number-input">
-          Номер телефона
-        </label>
-        <div class="contacts-fieldset__phone-div">
-          <input
-            class="main-form__input-text" id="phone-number-input" type="tel" name="phone-number"
-            placeholder="Номер, пожалуйста">
-        </div>
-        <label class="main-form__label-for-input-text contacts-fieldset__email-label" for="address-input">
-          Адрес почты
-        </label>
-        <div class="contacts-fieldset__email-div">
-          <input
-            class="main-form__input-text" id="address-input" type="email" name="email" placeholder="Введите почту *">
-        </div>
-      </div>
-    </fieldset>
-    <fieldset class="main-form__platform-type-fieldset platform-type-fieldset reset-fieldset">
-      <legend class="main-form__legend">
-        С каким приложением&#32;<br>
-        путешествовали?
-      </legend>
-      <div class="main-form__inner-container">
-        <label class="main-form__label-for-check-or-radio check">
-          <input class="check__input" type="radio" name="platform" value="ios" checked>
-          <span class="check__radio"></span>
-          Pink для iOS
-        </label>
-        <label class="main-form__label-for-check-or-radio check">
-          <input class="check__input" type="radio" name="platform" value="android">
-          <span class="check__radio"></span>
-          Pink на Android
-        </label>
-        <label class="main-form__label-for-check-or-radio check">
-          <input class="check__input" type="radio" name="platform" value="windows-phone">
-          <span class="check__radio"></span>
-          Windows Phone
-        </label>
-      </div>
-    </fieldset>
-    <fieldset class="main-form__emotion-fieldset main-form__inner-container reset-fieldset">
-      <legend class="main-form__legend">
-        Опишите свои эмоции
-      </legend>
-      <textarea
-        class="main-form__input-text main-form__emotion-text-area" name="message"
-        placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-    </fieldset>
-    <div class="main-form__submit-button-and-hint main-form__inner-container">
-      <button class="main-form__submit-button button" type="submit">Отправить форму</button>
-      <p class="main-form__hint"><span class="main-form__star">*</span> &#9473; Обязательные <span
-        class="main-form__extra-text">для заполнения</span> поля</p>
+  <section class="form-section">
+    <div class="container">
+      <h3 class="form-section__pre-form-header">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <span>Пожалуйста, заполните форму ниже:</span>
+      </h3>
     </div>
-  </form>
+    <form method="post" action="#" class="form-section__main-form main-form main-form__outer-container">
+      <fieldset class="main-form__name-fieldset name-fieldset reset-fieldset main-form__inner-container">
+        <div class="main-form__label-and-input-div">
+          <label class="main-form__label-for-input-text" for="family-name-input">Фамилия:</label>
+          <input
+            class="main-form__input-text" id="family-name-input" type="text" placeholder="Укажите фамилию *"
+            name="family-name">
+        </div>
+        <div class="main-form__label-and-input-div">
+          <label class="main-form__label-for-input-text" for="name-input">Имя:</label>
+          <input class="main-form__input-text" id="name-input" type="text" placeholder="Введите ваше имя *" name="name">
+        </div>
+        <div class="main-form__label-and-input-div">
+          <label class="main-form__label-for-input-text" for="father-name-input">Отчество:</label>
+          <input
+            class="main-form__input-text" id="father-name-input" type="text" placeholder="Ну и отчество тоже"
+            name="father-name">
+        </div>
+      </fieldset>
+      <fieldset class="main-form__travel-fieldset travel-fieldset reset-fieldset">
+        <legend class="main-form__legend">
+          Ваши безбашенные&#32;<br>
+          достижения в путешествии
+        </legend>
+        <div class="main-form__inner-container">
+          <label class="main-form__label-for-check-or-radio check">
+            <input class="check__input" type="checkbox" name="shark" checked>
+            <span class="check__box"></span>
+            Сделал селфи с акулой
+          </label>
+          <label class="main-form__label-for-check-or-radio check">
+            <input class="check__input" type="checkbox" name="beach" checked>
+            <span class="check__box"></span>
+            Обгорел на пляже
+          </label>
+          <label class="main-form__label-for-check-or-radio check">
+            <input class="check__input" type="checkbox" name="shack-noris">
+            <span class="check__box"></span>
+            Видел Чака Норриса
+          </label>
+          <label class="main-form__label-for-check-or-radio check">
+            <input class="check__input" type="checkbox" name="souvenirs">
+            <span class="check__box"></span>
+            Накупил сувениров
+          </label>
+          <label class="main-form__label-for-check-or-radio check">
+            <input class="check__input" type="checkbox" name="tower" checked>
+            <span class="check__box"></span>
+            Удержал башню
+          </label>
+          <label class="main-form__label-for-check-or-radio check">
+            <input class="check__input" type="checkbox" name="destroyed-hotel">
+            <span class="check__box"></span>
+            Разгромил отель
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="main-form__contacts-fieldset contacts-fieldset reset-fieldset">
+        <legend class="main-form__legend">
+          Контактная информация
+        </legend>
+        <div class="main-form__inner-container">
+          <label class="main-form__label-for-input-text contacts-fieldset__phone-number-label" for="phone-number-input">
+            Номер телефона
+          </label>
+          <div class="contacts-fieldset__phone-div">
+            <input
+              class="main-form__input-text" id="phone-number-input" type="tel" name="phone-number"
+              placeholder="Номер, пожалуйста">
+          </div>
+          <label class="main-form__label-for-input-text contacts-fieldset__email-label" for="address-input">
+            Адрес почты
+          </label>
+          <div class="contacts-fieldset__email-div">
+            <input
+              class="main-form__input-text" id="address-input" type="email" name="email" placeholder="Введите почту *">
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="main-form__platform-type-fieldset platform-type-fieldset reset-fieldset">
+        <legend class="main-form__legend">
+          С каким приложением&#32;<br>
+          путешествовали?
+        </legend>
+        <div class="main-form__inner-container">
+          <label class="main-form__label-for-check-or-radio check">
+            <input class="check__input" type="radio" name="platform" value="ios" checked>
+            <span class="check__radio"></span>
+            Pink для iOS
+          </label>
+          <label class="main-form__label-for-check-or-radio check">
+            <input class="check__input" type="radio" name="platform" value="android">
+            <span class="check__radio"></span>
+            Pink на Android
+          </label>
+          <label class="main-form__label-for-check-or-radio check">
+            <input class="check__input" type="radio" name="platform" value="windows-phone">
+            <span class="check__radio"></span>
+            Windows Phone
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="main-form__emotion-fieldset main-form__inner-container reset-fieldset">
+        <legend class="main-form__legend">
+          Опишите свои эмоции
+        </legend>
+        <textarea
+          class="main-form__input-text main-form__emotion-text-area" name="message"
+          placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </fieldset>
+      <div class="main-form__submit-button-and-hint main-form__inner-container">
+        <button class="main-form__submit-button button" type="submit">Отправить форму</button>
+        <p class="main-form__hint"><span class="main-form__star">*</span> &#9473; Обязательные <span
+          class="main-form__extra-text">для заполнения</span> поля</p>
+      </div>
+    </form>
+  </section>
 </main>
 <footer class="main-footer">
   <div class="container">

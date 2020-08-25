@@ -231,11 +231,9 @@
     padding-top: 88px;
   }
 
-  .photos__link--panorama {
-    & img {
-      min-width: 1200px;
-      height: 506px;
-    }
+  .photos__link--panorama img {
+    min-width: 1200px;
+    height: 506px;
   }
 
   .photos__panorama-span {
