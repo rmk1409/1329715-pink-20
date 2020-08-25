@@ -1,5 +1,6 @@
 .main-form__legend {
   width: 100%;
+  margin: 0 auto;
   padding: 40px 50px 3px;
   font-style: normal;
   font-size: 14px;
@@ -14,7 +15,7 @@
 .main-form__emotion-fieldset .main-form__legend {
   background-color: $white;
   padding: 0;
-  margin: 0 0 0;
+  margin: 0 auto;
 }
 
 .main-form__label-for-input-text {
