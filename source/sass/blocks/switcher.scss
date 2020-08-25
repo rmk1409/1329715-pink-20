@@ -11,11 +11,11 @@
   &--active,
   &:active {
     opacity: 1;
-
-    & svg {
-      fill: $light-red;
-    }
   }
+}
+
+.switcher:active svg {
+  fill: $light-red;
 }
 
 @media (min-width: $tablet-min-width) {
@@ -25,10 +25,10 @@
     opacity: 1;
     cursor: default;
     transform: scale(0.5);
+  }
 
-    & svg {
-      fill: $light-red;
-    }
+  .switcher svg {
+    fill: $light-red;
   }
 }
 
