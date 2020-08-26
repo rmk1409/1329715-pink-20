@@ -60,7 +60,7 @@
         <span>Пожалуйста, заполните форму ниже:</span>
       </h3>
     </div>
-    <form method="post" action="#" class="form-section__main-form main-form main-form__outer-container">
+    <form class="form-section__main-form main-form main-form__outer-container" method="post" action="#" >
       <fieldset class="main-form__name-fieldset name-fieldset reset-fieldset main-form__inner-container">
         <div class="main-form__label-and-input-div">
           <label class="main-form__label-for-input-text" for="family-name-input">Фамилия:</label>
@@ -128,7 +128,7 @@
           <div class="contacts-fieldset__phone-div">
             <input
               class="main-form__input-text" id="phone-number-input" type="tel" name="phone-number"
-              placeholder="Номер, пожалуйста">
+              placeholder="Номер, пожалуйста" pattern="[0-9]{10}">
           </div>
           <label class="main-form__label-for-input-text contacts-fieldset__email-label" for="address-input">
             Адрес почты
