@@ -104,8 +104,7 @@
 }
 
 .main-form__hint {
-  margin: 0;
-  margin-top: 34px;
+  margin: 34px 0 0;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -265,11 +264,6 @@
     transform: translateX(-50%);
   }
 
-  .platform-type-fieldset .main-form__label-for-check-or-radio {
-    margin-bottom: 44px;
-    padding-left: 62px;
-  }
-
   .main-form__hint {
     margin-top: 47px;
   }
@@ -293,7 +287,6 @@
     grid-row: 1;
     grid-column: 2;
     margin-top: 0;
-    padding: 46px 28px 64px;
     height: fit-content;
   }
 
@@ -303,10 +296,6 @@
 
   .main-form__name-fieldset {
     margin-top: 8px;
-  }
-
-  .platform-type-fieldset .main-form__label-for-check-or-radio:last-child {
-    margin-bottom: 0;
   }
 
   .main-form__contacts-fieldset {
@@ -321,14 +310,13 @@
     grid-column: 1/-1;
     margin-top: 46px;
     padding-top: 47px;
-    padding-bottom: 2px;
+    padding-bottom: 8px;
   }
 
   .main-form__travel-fieldset .main-form__inner-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
     column-gap: 56px;
-    min-height: 170px;
   }
 
   .main-form__contacts-fieldset .main-form__inner-container {

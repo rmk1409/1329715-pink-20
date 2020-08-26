@@ -15,16 +15,6 @@
   }
 }
 
-.main-header--opened .nav-menu {
-  display: block;
-  background-color: $dark-blue;
-  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-}
-
-.main-header--opened .nav-menu__link {
-  box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-}
-
 @media (min-width: $desktop-min-width) {
   .nav-menu__link {
     padding: 0;
@@ -39,14 +29,9 @@
     border-bottom: 2px solid $white;
   }
 
-  .nav-menu,
-  .main-header--opened .nav-menu {
+  .nav-menu {
     display: flex;
     background-color: transparent;
-    box-shadow: none;
-  }
-
-  .main-header--opened .nav-menu__link {
     box-shadow: none;
   }
 }
