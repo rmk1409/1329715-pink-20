@@ -15,6 +15,7 @@
 
 .options__table {
   width: 840px;
+  background-color: $white;
   border-collapse: collapse;
 }
 
@@ -25,7 +26,6 @@
   font-size: 14px;
   line-height: 30px;
   border: 2px solid $grey2;
-  background-color: $white;
   color: $dark-blue;
   text-transform: uppercase;
 }
@@ -169,7 +169,7 @@
 
     &:first-child {
       display: table-cell;
-      background-color: transparent;
+      background-color: $grey;
       border: none;
     }
   }

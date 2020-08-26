@@ -3,7 +3,7 @@
   color: $white;
 }
 
-.container--index-page-intro {
+.intro__container-index-page {
   position: relative;
 
   &::after {
@@ -42,7 +42,7 @@
   text-align: center;
 }
 
-.container--index-page-intro .intro__header {
+.intro__container-index-page .intro__header {
   width: 280px;
 }
 
@@ -56,13 +56,13 @@
     padding-top: 95px;
   }
 
-  .container--index-page-intro {
+  .intro__container-index-page {
     &::after {
       background-image: none;
     }
   }
 
-  .container--index-page-intro .intro__header {
+  .intro__container-index-page .intro__header {
     width: 240px;
     margin-left: 30px;
   }
@@ -96,7 +96,7 @@
     padding-top: 99px;
   }
 
-  .container--index-page-intro {
+  .intro__container-index-page {
     &::after {
       right: 42px;
       bottom: -440px;

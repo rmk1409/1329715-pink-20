@@ -74,14 +74,6 @@
   margin: 0 auto;
 }
 
-.handler-crop,
-.handler-fill,
-.handler-contrast {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
 .handle-form__buttons-div {
   margin-top: 34px;
   padding: 39px 0 40px;
@@ -135,12 +127,6 @@
   }
 }
 
-.handler-crop__toggle,
-.handler-fill__toggle,
-.handler-contrast__toggle {
-  display: none;
-}
-
 .handle-form__toggle-for-mobile {
   display: block;
   left: 213px;
@@ -148,7 +134,7 @@
 
 @media (min-width: $tablet-min-width) {
   .handle-form {
-    padding-top: 64px;
+    padding-top: 63px;
   }
 
   .handle-form__outer-container {
@@ -194,21 +180,6 @@
     width: 270px;
     margin-top: 0;
     margin-left: 4px;
-  }
-
-  .handler-crop__toggle {
-    left: 165px;
-    display: block;
-  }
-
-  .handler-fill__toggle {
-    left: 45px;
-    display: block;
-  }
-
-  .handler-contrast__toggle {
-    left: 115px;
-    display: block;
   }
 
   .handle-form__button-and-scale-with-toggle {
@@ -299,18 +270,6 @@
   .handle-form__scale {
     width: 288px;
     margin-left: 50px;
-  }
-
-  .handler-crop__toggle {
-    left: 120px;
-  }
-
-  .handler-fill__toggle {
-    left: 297px;
-  }
-
-  .handler-contrast__toggle {
-    left: 212px;
   }
 
   .handle-form__button-and-scale-with-toggle {
