@@ -322,14 +322,13 @@
     margin-top: 46px;
     padding-top: 47px;
     padding-bottom: 2px;
+  }
 
-    .main-form__inner-container {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      column-gap: 57px;
-      height: 170px;
-    }
+  .main-form__travel-fieldset .main-form__inner-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 56px;
+    min-height: 170px;
   }
 
   .main-form__contacts-fieldset .main-form__inner-container {
