@@ -93,6 +93,17 @@ const copy = () => {
 };
 exports.copy = copy;
 
+// It copies all files to 'docs' folder
+const ghPages = () => {
+  return gulp.src([
+    "build/**/*"
+  ], {
+    base: "build"
+  })
+    .pipe(gulp.dest("docs"));
+}
+exports.ghPages = ghPages;
+
 // Minify html & moved it to 'build'
 const html = () => {
   return gulp.src([
